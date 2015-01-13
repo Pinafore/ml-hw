@@ -1,6 +1,8 @@
 K-Nearest Neighbors
 =
 
+Due: 30. January
+
 Overview
 --------
 
