@@ -233,3 +233,4 @@ Hints
     functions.
 1.  Make sure your code actually behaves differently for different
     values of _k_.
+1.  _median_ can give answers that are not in the label set (e.g. if _k_ is 2).  That's fine for this assignment.
