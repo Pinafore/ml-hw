@@ -6,8 +6,9 @@ Due: 6. February (23:55)
 Overview
 --------
 
-In this homework you'll implement a stochastic gradient ascent for logistic
-regression.
+In this homework you'll implement a stochastic gradient ascent for
+logistic regression and you'll apply it to the task of determining
+whether documents are talking about hockey or basketball.
 
 ![Hockey and Baseball: Are they really that different?](baseball_hockey.jpg "Two sports I know nothing about")
 
@@ -24,12 +25,13 @@ What you have to do
 ----
 
 Coding:
+1.  Understand how the code is creating feature vectors (this will help you code the solution and to do the later analysis).  You don't actually need to write any code for this, however.
 1.  (Optional) Store necessary data in the constructor so you can do
     classification later.
 1.  Modify the _sg update_ function to perform non-regularized updates.
 1.  Modify the _sg update_ function so that it finds regularized updates.
     *NOTE*: You should only update [non-zero dimensions](http://lingpipe.files.wordpress.com/2008/04/lazysgdregression.pdf).
-1.  You'll need to write some code to get the best/worst predictors.
+1.  You'll need to write some code to get the best/worst predictors (see below).
 
 Analysis:
 1.  What is the role of the learning rate?
@@ -316,7 +318,7 @@ Hints
 -
 
 1.  As with the previous assignment, make sure that you debug on small
-    datasets first.
+    datasets first (I've provided _toy text_ in the data directory to get you started).
 1.  Certainly make sure that you do the unregularized version first
     and get it to work well.
 1.  Use numpy functions whenever you can to make the computation faster.
