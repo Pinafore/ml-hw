@@ -26,12 +26,11 @@ What you have to do
 
 Coding:
 1.  Understand how the code is creating feature vectors (this will help you code the solution and to do the later analysis).  You don't actually need to write any code for this, however.
-1.  (Optional) Store necessary data in the constructor so you can do
-    classification later.
-1.  Modify the _sg update_ function to perform non-regularized updates.
-1.  Modify the _sg update_ function so that it finds regularized updates.
+2.  (Optional) Store necessary data in the constructor so you can do classification later.  
+3.  You'll likely need to write some code to get the best/worst features (see below).
+3.  Modify the _sg update_ function to perform non-regularized updates.
+4.  Modify the _sg update_ function so that it finds regularized updates.
     *NOTE*: You should only update [non-zero dimensions](http://lingpipe.files.wordpress.com/2008/04/lazysgdregression.pdf).
-1.  You'll need to write some code to get the best/worst predictors (see below).
 
 Analysis:
 1.  What is the role of the learning rate?
