@@ -9,12 +9,28 @@ kNEG = Example(0, "B:1 C:3 D:4".split(), kTOY_VOCAB, None)
 class TestKnn(unittest.TestCase):
     def setUp(self):
         self.logreg_unreg = LogReg(5, 0.0, lambda x: 1.0)
-        self.logreg_reg = LogReg(5, 1.0, lambda x: 1.0)
+        self.logreg_reg = LogReg(5, 0.25, lambda x: 1.0)
 
     def test_reg(self):
-        None
-        # Soon to appear
+        print(self.logreg_reg.beta)
+        print(kPOS.x)
+        b1 = self.logreg_reg.sg_update(kPOS, 0)
+        self.assertAlmostEqual(b1[0], .25)
+        self.assertAlmostEqual(b1[1], 1.0)
+        self.assertAlmostEqual(b1[2], 0.75)
+        self.assertAlmostEqual(b1[3], 0.25)
+        self.assertAlmostEqual(b1[4], 0.0)
 
+        print(self.logreg_reg.beta)
+        print(kPOS.x)
+        b2 = self.logreg_reg.sg_update(kNEG, 1)
+        self.assertAlmostEqual(b1[0], -0.30097640098415529)
+        self.assertAlmostEqual(b1[1], 1.0)
+        self.assertAlmostEqual(b1[2], -0.025488200492077645)
+        self.assertAlmostEqual(b1[3], -0.57646460147623291)
+        self.assertAlmostEqual(b1[4], -0.85195280196831058)
+
+        
     def test_unreg(self):
         print(self.logreg_unreg.beta)
         print(kPOS.x)
