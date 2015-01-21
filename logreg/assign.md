@@ -35,17 +35,15 @@ Coding:
 
 Analysis:
 1.  What is the role of the learning rate?
-1.  How many passes over the data do you need to complete?
-1.  What words are the best predictors of each class?  How (mathematically) did you find them?
-1.  What words are the poorest predictors of classes?  How (mathematically) did
-    you find them?
+2.  How many passes over the data do you need to complete?
+3.  What words are the best predictors of each class?  How (mathematically) did you find them?
+4.  What words are the poorest predictors of classes?  How (mathematically) did you find them?
 
 Extra credit:
 1.  Use a schedule to update the learning rate.
     - Supply an appropriate argument to step parameter
     - Support it in your _sg update_
     - Show the effect in your analysis document
-
 1.  Use document frequency (provided in the vocabulary file) to modify the feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
     - Modify the Example to store the df vector
     - With the appropriate flag, use the ~df~ vector rather than ~x~ in the update
