@@ -42,12 +42,11 @@ Analysis:
 
 Extra credit:
 1.  Use a schedule to update the learning rate.
-    a.  Supply an appropriate argument
-    to step parameter
+    a.  Supply an appropriate argument to step parameter
     a.  Support it in your _sg update_
     a.  Show the effect in your analysis document
-1.  Use document frequency (provided in the vocabulary file) to modify the
-    feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
+
+1.  Use document frequency (provided in the vocabulary file) to modify the feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
     a.  Modify the Example to store the df vector
     a.  With the appropriate flag, use the ~df~ vector rather than ~x~ in the
     update
