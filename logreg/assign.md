@@ -25,6 +25,7 @@ What you have to do
 ----
 
 Coding:
+
 1. Understand how the code is creating feature vectors (this will help you code the solution and to do the later analysis).  You don't actually need to write any code for this, however.
 2. (Optional) Store necessary data in the constructor so you can do classification later.  
 3. You'll likely need to write some code to get the best/worst features (see below).
@@ -33,12 +34,14 @@ Coding:
     *NOTE*: You should only update [non-zero dimensions](http://lingpipe.files.wordpress.com/2008/04/lazysgdregression.pdf).
 
 Analysis:
+
 1. What is the role of the learning rate?
 2. How many passes over the data do you need to complete?
 3. What words are the best predictors of each class?  How (mathematically) did you find them?
 4. What words are the poorest predictors of classes?  How (mathematically) did you find them?
 
 Extra credit:
+
 1. Use a schedule to update the learning rate.
     - Supply an appropriate argument to step parameter
     - Support it in your _sg update_
