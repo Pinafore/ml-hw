@@ -25,33 +25,31 @@ What you have to do
 ----
 
 Coding:
-1.  Understand how the code is creating feature vectors (this will help you code the solution and to do the later analysis).  You don't actually need to write any code for this, however.
-1.  (Optional) Store necessary data in the constructor so you can do
-    classification later.
-1.  Modify the _sg update_ function to perform non-regularized updates.
-1.  Modify the _sg update_ function so that it finds regularized updates.
+
+1. Understand how the code is creating feature vectors (this will help you code the solution and to do the later analysis).  You don't actually need to write any code for this, however.
+2. (Optional) Store necessary data in the constructor so you can do classification later.  
+3. You'll likely need to write some code to get the best/worst features (see below).
+3. Modify the _sg update_ function to perform non-regularized updates.
+4. Modify the _sg update_ function so that it finds regularized updates.
     *NOTE*: You should only update [non-zero dimensions](http://lingpipe.files.wordpress.com/2008/04/lazysgdregression.pdf).
-1.  You'll need to write some code to get the best/worst predictors (see below).
 
 Analysis:
-1.  What is the role of the learning rate?
-1.  How many passes over the data do you need to complete?
-1.  What words are the best predictors of each class?  How (mathematically) did you find them?
-1.  What words are the poorest predictors of classes?  How (mathematically) did
-    you find them?
+
+1. What is the role of the learning rate?
+2. How many passes over the data do you need to complete?
+3. What words are the best predictors of each class?  How (mathematically) did you find them?
+4. What words are the poorest predictors of classes?  How (mathematically) did you find them?
 
 Extra credit:
-1.  Use a schedule to update the learning rate.
-    a.  Supply an appropriate argument
-    to step parameter
-    a.  Support it in your _sg update_
-    a.  Show the effect in your analysis document
-1.  Use document frequency (provided in the vocabulary file) to modify the
-    feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
-    a.  Modify the Example to store the df vector
-    a.  With the appropriate flag, use the ~df~ vector rather than ~x~ in the
-    update
-    a.  Show the effect in your analysis document
+
+1. Use a schedule to update the learning rate.
+    - Supply an appropriate argument to step parameter
+    - Support it in your _sg update_
+    - Show the effect in your analysis document
+1.  Use document frequency (provided in the vocabulary file) to modify the feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
+    - Modify the Example to store the df vector
+    - With the appropriate flag, use the ~df~ vector rather than ~x~ in the update
+    - Show the effect in your analysis document
 
 Caution: When implementing extra credit, make sure your implementation of the
 regular algorithms doesn't change.
@@ -59,12 +57,11 @@ regular algorithms doesn't change.
 What to turn in
 -
 
-1.  Submit your _logreg.py_ file (include your name at the top of the source)
-1.  Submit your _analysis.pdf_ file
-    a.  no more than one page
-    a.  pictures
-    are better than text)
-    a.  include your name at the top of the PDF
+1. Submit your _logreg.py_ file (include your name at the top of the source)
+1. Submit your _analysis.pdf_ file
+    - no more than one page
+    - pictures are better than text)
+    - include your name at the top of the PDF
 
 Unit Tests
 =
