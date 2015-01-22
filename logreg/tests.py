@@ -26,11 +26,11 @@ class TestKnn(unittest.TestCase):
         b2 = self.logreg_reg.sg_update(kNEG, 1)
         self.assertAlmostEqual(b1[0], -0.30097640098415529)
         self.assertAlmostEqual(b1[1], 1.0)
-        self.assertAlmostEqual(b1[2], -0.025488200492077645)
-        self.assertAlmostEqual(b1[3], -0.57646460147623291)
+        self.assertAlmostEqual(b1[2], -0.05097640098415529)
+        self.assertAlmostEqual(b1[3], -1.1529292029524658)
         self.assertAlmostEqual(b1[4], -0.85195280196831058)
 
-        
+
     def test_unreg(self):
         print(self.logreg_unreg.beta)
         print(kPOS.x)
