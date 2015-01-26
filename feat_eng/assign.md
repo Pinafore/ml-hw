@@ -57,9 +57,9 @@ In addition to turning in your code on Moodle, you'll also need to submit your
 predictions on Kaggle, an online tournament site for machine learning
 competitions.
 
-In addition, please turn in a file called _explanation.pdf_
-explaining your process of creating additional features.  Make sure
-you state your username there.
+In addition: 
+* please turn in a file called _explanation.pdf_ explaining your process of creating additional features.  Make sure you state your username there.
+* upload your feature extraction code that produced your predictions
 
 Your username should be of the form _CU_IDENTIKEY_
 that we can easily map it to your grade.
