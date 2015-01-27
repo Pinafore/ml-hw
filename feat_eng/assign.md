@@ -5,7 +5,7 @@ Due: 13. February
 
 The aim of this assignment is to do text classification on trivia questions,
 sorting them into their appropriate category.  We'll be using the logistic regression
-classifier provided by ~sklearn~.
+classifier provided by *sklearn*.
 
 Unlike previous assignments, the code provided with this assignment has all of
 the functionality required.  Your job is to make the functionality better by
@@ -56,6 +56,8 @@ Submission
 In addition to turning in your code on Moodle, you'll also need to submit your
 predictions on Kaggle, an online tournament site for machine learning
 competitions.
+
+https://inclass.kaggle.com/c/cmsc-5622-document-classification
 
 In addition: 
 * please turn in a file called _explanation.pdf_ explaining your process of creating additional features.  Make sure you state your username there.
