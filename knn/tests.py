@@ -16,22 +16,22 @@ class TestKnn(unittest.TestCase):
         self.queries = array([[1, 5], [0, 3], [6, 1], [6, 4]])
 
     def test1(self):
-        self.assertEqual(self.knn[1].classify(self.queries[0]), 1)
-        self.assertEqual(self.knn[1].classify(self.queries[1]), -1)
-        self.assertEqual(self.knn[1].classify(self.queries[2]), 1)
-        self.assertEqual(self.knn[1].classify(self.queries[3]), -1)
+        self.assertAlmostEqual(self.knn[1].classify(self.queries[0]), 1)
+        self.assertAlmostEqual(self.knn[1].classify(self.queries[1]), -1)
+        self.assertAlmostEqual(self.knn[1].classify(self.queries[2]), 1)
+        self.assertAlmostEqual(self.knn[1].classify(self.queries[3]), -1)
 
     def test2(self):
-        self.assertEqual(self.knn[2].classify(self.queries[0]), 1)
-        self.assertEqual(self.knn[2].classify(self.queries[1]), 0)
-        self.assertEqual(self.knn[2].classify(self.queries[2]), 0)
-        self.assertEqual(self.knn[2].classify(self.queries[3]), -1)
+        self.assertAlmostEqual(self.knn[2].classify(self.queries[0]), 1)
+        self.assertAlmostEqual(self.knn[2].classify(self.queries[1]), 0)
+        self.assertAlmostEqual(self.knn[2].classify(self.queries[2]), 0)
+        self.assertAlmostEqual(self.knn[2].classify(self.queries[3]), -1)
 
     def test3(self):
-        self.assertEqual(self.knn[3].classify(self.queries[0]), 1)
-        self.assertEqual(self.knn[3].classify(self.queries[1]), 1)
-        self.assertEqual(self.knn[3].classify(self.queries[2]), 1)
-        self.assertEqual(self.knn[3].classify(self.queries[3]), -1)
+        self.assertAlmostEqual(self.knn[3].classify(self.queries[0]), 1)
+        self.assertAlmostEqual(self.knn[3].classify(self.queries[1]), 1)
+        self.assertAlmostEqual(self.knn[3].classify(self.queries[2]), 1)
+        self.assertAlmostEqual(self.knn[3].classify(self.queries[3]), -1)
 
 if __name__ == '__main__':
     unittest.main()
