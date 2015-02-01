@@ -55,7 +55,7 @@ Submission
 
 In addition to turning in your code on Moodle, you'll also need to submit your
 predictions on Kaggle, an online tournament site for machine learning
-competitions.
+competitions.  You must sign up with your Colorado e-mail (it's a restricted entry competition).
 
 https://inclass.kaggle.com/c/cmsc-5622-document-classification
 
