@@ -1,12 +1,12 @@
-Learnability
+Boosting
 =
 
-Due: 20. Feb (70 Points)
+Due: 13. Mar (20 Points)
 
 Overview
 --------
 
-Unlike previous homework assignments, this homework will require you to write
+Like the learnability homework assignment, this homework will require you to write
 proofs and argue your point.  Thus, it's important that your write clearly and
 rigorously argue your point.
 
@@ -38,5 +38,5 @@ https://www.math.hmc.edu/homework/
 Problems
 ------
 
-Complete 2.3, 2.4, 2.6, 3.5, 3.12, 3.13, and 3.19 from the Foundations of
-Machine Learning textbook.  Each are worth 10 points each.
+Complete 6.3 and 6.6 from the Foundations of Machine Learning textbook.  You may
+want to use 6.3 in your solution to 6.6, so I'd suggest doing that first.
