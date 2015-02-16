@@ -16,11 +16,13 @@ What you have to do
 ----
 
 Coding:
+
 1.  Given a weight vector, implement the *find support* function that returns the indices of the support vectors.
 1.  Given a weight vector, implement the *find slack* function that returns the indices of the slack vectors.
 1.  Given the alpha dual parameterization, implement the *weight vector* function that returns the corresponding weight vector.
 
 Analysis:
+
 1.  Use the scikit implementation of support vector machines to train a classifier to distinguish 3's from 8's.
 1.  Try at least five values of the regularization parameter _C_ and at least two kernels.
 1.  Give examples of support vectors with a linear kernel.
