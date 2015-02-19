@@ -40,7 +40,10 @@ class Knearest:
         :param k: The number of nearest points to consider in classification
         """
 
-        # You can modify the constructor, but you shouldn't need to
+        # You can modify the constructor, but you shouldn't need to.
+        # Do not use another datastructure from anywhere else to
+        # complete the assignment.
+
         self._kdtree = BallTree(x)
         self._y = y
         self._k = k
