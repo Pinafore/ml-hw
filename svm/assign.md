@@ -23,7 +23,7 @@ Coding:
 
 Analysis:
 
-1.  Use the scikit implementation of support vector machines to train a classifier to distinguish 3's from 8's.
+1.  Use the scikit implementation of support vector machines to train a classifier to distinguish 3's from 8's.  (Use the MNIST data from the KNN homework.)
 1.  Try at least five values of the regularization parameter _C_ and at least two kernels.
 1.  Give examples of support vectors with a linear kernel.
 
