@@ -38,8 +38,7 @@ Unit Tests
 =
 
 I've provided unit tests based on the example that we worked through in class.
-Before running your code on read data, make sure it passes all of the unit
-tests.  However, these tests are not exhaustive; passing the tests will not
+Make sure it passes all of the unit tests.  However, these tests are not exhaustive; passing the tests will not
 guarantee a good grade, you should verify yourself that your code is robust and
 correct.
 
