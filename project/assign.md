@@ -3,7 +3,7 @@ Subject
 ==================
 
 You may either enter a shared
-[https://inclass.kaggle.com/c/when-they-buzz2](Kaggle competition) or
+[Kaggle competition](https://inclass.kaggle.com/c/when-they-buzz2) or
 choose a project of your own.
 
 If you choose to work on a project of your own choosing, it must:
