@@ -66,12 +66,7 @@ usual class time).  In the final presentation you will:
   is not the same thing as simply presenting the error matrix, as it
   does not inspect any individual examples.
 
-* The linguistic motivation for your features.  This is a
-  computational linguistics class, so you should give precedence to
-  features / techniques that we use in this class (e.g., syntax,
-  morphology, part of speech, word sense, etc.).  Given two features
-  that work equally well and one that is linguistically motivated,
-  we'll prefer the linguistically motivated one.
+* The motivation for your features.  Features shouldn't come out of nowhere; you should have a clear domain-specific story for how you derived the features or an error analysis motivations for the features you create.
 
 * Presumably you did many different things; how did they each
   individually contribute to your final result?
