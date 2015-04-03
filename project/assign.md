@@ -25,7 +25,7 @@ You must form a group of 3-4 students enrolled in this course.  If you have a pr
 Proposal
 ==================
 
-The project proposal is due 2. April.  This one page PDF document
+The project proposal is due 3. April.  This one page PDF document
 should describe:
 
 * What project you're working on.  If you're not doing the shared competition, you must describe the task, data, and baselines clearly.
