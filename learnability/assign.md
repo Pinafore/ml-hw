@@ -1,7 +1,7 @@
 Learnability
 =
 
-Due: 20. Feb (70 Points)
+Due: 27. Feb (70 Points)
 
 Overview
 --------
@@ -38,5 +38,6 @@ https://www.math.hmc.edu/homework/
 Problems
 ------
 
-Complete 2.3, 2.4, 2.6, 3.5, 3.12, 3.13, and 3.19 from the Foundations of
+Complete 2.3, 2.4, 2.6, 3.5, 3.6, 3.12, and 3.19 from the Foundations of
 Machine Learning textbook.  Each are worth 10 points each.
+
