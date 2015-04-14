@@ -219,7 +219,7 @@ if __name__ == "__main__":
     argparser.add_argument("--documents", help="Raw documents",
                            type=str, default="toy/toy.txt", required=False)
     argparser.add_argument("--num_topics", help="Number of topics",
-                           type=int, default=3, required=False)
+                           type=int, default=10, required=False)
     argparser.add_argument("--vocab", help="Vocabulary",
                            type=str, default="toy/toy.voc", required=False)
     argparser.add_argument("--alpha", help="Alpha hyperparameter",
