@@ -6,13 +6,14 @@ from lda import VariationalBayes
 from scipy.special import psi as digam
 from math import exp
 
+
 class TestVB(unittest.TestCase):
     def setUp(self):
         self.init_beta = array([[.26, .185, .185, .185, .185],
                                 [.185, .185, .26, .185, .185],
                                 [.185, .185, .185, .26, .185]])
 
-    def test_phi(self):
+    def test_single_phi(self):
         vb = VariationalBayes()
 
         gamma = array([2.0, 2.0, 2.0])
@@ -24,6 +25,20 @@ class TestVB(unittest.TestCase):
         self.assertAlmostEqual(phi[0], beta[0][0] * prop / normalizer)
         self.assertAlmostEqual(phi[1], beta[1][0] * prop / normalizer)
         self.assertAlmostEqual(phi[2], beta[2][0] * prop / normalizer)
+
+    def test_multiple_phi(self):
+        vb = VariationalBayes()
+
+        gamma = array([2.0, 2.0, 2.0])
+        beta = self.init_beta
+        phi = vb.new_phi(gamma, beta, 0, 2)
+
+        prop = 0.27711205238850234
+        normalizer = sum(x * prop for x in beta[:, 0]) / 2.0
+        self.assertAlmostEqual(phi[0], beta[0][0] * prop / normalizer)
+        self.assertAlmostEqual(phi[1], beta[1][0] * prop / normalizer)
+        self.assertAlmostEqual(phi[2], beta[2][0] * prop / normalizer)
+
 
     def test_m(self):
         vb = VariationalBayes()
