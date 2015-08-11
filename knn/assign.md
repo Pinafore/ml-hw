@@ -14,8 +14,10 @@ corresponds to.
 
 This is designed to be a *very easy* homework.  If you're spending a
 lot of time on this assignment, you are either:
+
 * not prepared to take the course (i.e., if you're struggling with Python)
 * seriously over-thinking the assignment
+* trying to reimplement too much of the assignment
 
 Most of this assignment will be done by calling libraries that have
 already been implemented for you.  If you are implementing
@@ -29,16 +31,14 @@ What you have to do
 ----
 
 Coding:
-1.  (Optional) Store necessary data in the constructor so you can do
-    classification later.
-1.  Modify the _majority_ function so that it returns the *value*
-    associated with the most *indices*.
-1.  Modify the _classify_ function so that it finds the closest
-    indicies to the query point.
-1.  Modify the _confusion matrix_ function to classify examples and
-    record which number it got right.
+
+1.  (Optional) Store necessary data in the constructor so you can do classification later.
+1.  Modify the _majority_ function so that it returns the *value* associated with the most *indices*.
+1.  Modify the _classify_ function so that it finds the closest indicies to the query point.
+1.  Modify the _confusion matrix_ function to classify examples and record which number it got right.
 
 Analysis:
+
 1.  What is the role of the number of training points to accuracy?
 1.  What is the role of ~k~ to accuracy?
 1.  What numbers get confused with each other most easily?
