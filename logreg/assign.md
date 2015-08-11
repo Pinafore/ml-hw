@@ -1,7 +1,7 @@
 Logistic Regression
 =
 
-Due: 6. February (23:55)
+Due: 11. February (23:55)
 
 Overview
 --------
