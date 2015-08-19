@@ -60,7 +60,7 @@ What to turn in
 1. Submit your _logreg.py_ file (include your name at the top of the source)
 1. Submit your _analysis.pdf_ file
     - no more than one page
-    - pictures are better than text)
+    - pictures are better than text
     - include your name at the top of the PDF
 
 Unit Tests
