@@ -60,7 +60,7 @@ How this Assignment is Graded (35+ points)
 
 25 points of your score will be generated from your performance on the the classification competition on Kaggle.  The performance will be evaluated on accuracy on a held-out test set.
 
-You'll get full credit on this assignment (35 points) if you can significantly
+You should be able to significantly
 improve on the baseline system (as reported by the Kaggle system).  If you can
 do much better than your peers, you can earn extra credit (up to 15 points).
 Your writeup explanation is worth 10 points.
