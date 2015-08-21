@@ -6,20 +6,19 @@ Due: 27. Feb (70 Points)
 Overview
 --------
 
-Unlike previous homework assignments, this homework will require you to write
-proofs and argue your point.  Thus, it's important that your write clearly and
-rigorously argue your point.
+For this homework, we will not be building anything practical.  Instead, we will
+implement algorithms that demonstrate and measure the importance of having
+hypothesis classes that aren't too powerful.
 
-You are welcome to discuss the problems with others in the class.  However:
+Implementation
+-
 
-* All solutions must be written individually and by yourself.  You cannot write
-up your solution in a group.
-* You cannot share completed solutions with others.
-* Do not look for completed solutions on the Internet.
-
-If you are not able to complete these sorts of problems on your own, you will be
-at a huge disadvantage when it comes time to solve similar problems on the
-midterm.
+Complete the following functions:
+* rademacher: Classify.correlation
+* rademacher: origin\_plane\_hypotheses
+* rademacher: axis\_aligned\_hypotheses
+* rademacher: rademacher\_estimate
+* vc\_sin: train\_sin\_classifier
 
 What you can assume
 ------
@@ -27,17 +26,30 @@ What you can assume
 You can assume any inequality in the books appendicies or anything we *proved*
 in class.  If you have doubts, ask on Piazza.
 
+Analysis
+-
+
+In your discussion file:
+* argue about an ordering of hypothesis classes in terms of complexity:
+  hyperplanes through the origin, arbitrary hyperplanes, and axis-aligned
+  rectangles (you can use your experiments as a guide, but simply reporting
+  those numbers is not sufficient; you must make a mathematical argument)
+* prove that your frequency correctly classifies any training set (up to
+  floating point precision on the computer).
+
 What to turn in
 ------
 
-Turn in a PDF with your completed assignment.  You may want to pay attention to
-this advice for writing up homework:
+Turn in your completed python files
+* rademacher.py
+* vc_sin.py
 
-https://www.math.hmc.edu/homework/
+As well as a discussion file
+* discussion.pdf
 
-Problems
+Hints
 ------
-
-Complete 2.3, 2.4, 2.6, 3.5, 3.6, 3.12, and 3.19 from the Foundations of
-Machine Learning textbook.  Each are worth 10 points each.
-
+1.  Feel free to use _bst.py_ for finding points in a range
+1.  You may want to use trigonometric functions for the hyperplane function
+1.  Do not make your code too slow; you will not get full credits if your code
+    does not complete in reasonable time
