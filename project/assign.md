@@ -81,7 +81,7 @@ Project Writeup
 ======================
 
 By 23:55 7. May, have the person in your group whose last name
-is alphabetically first submit their project writeup explaining what
+is alphabetically last submit their project writeup explaining what
 you did and what results you achieved on Moodle.  This document should
 make it clear:
 
