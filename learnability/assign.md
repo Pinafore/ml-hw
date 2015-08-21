@@ -1,7 +1,7 @@
 Learnability
 =
 
-Due: 2. Oct (50 Points)
+Due: 2. Oct (40 Points)
 
 Overview
 --------
