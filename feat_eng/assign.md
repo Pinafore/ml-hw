@@ -45,7 +45,7 @@ predictions on Kaggle, an online tournament site for machine learning
 competitions.  You must sign up with your Colorado e-mail (it's a restricted
 entry competition).
 
-https://inclass.kaggle.com/c/cmsc-5622-spoilers
+https://inclass.kaggle.com/c/spoiler-detection
 
 In addition:
 * please turn in a file called _explanation.pdf_ explaining your process of
