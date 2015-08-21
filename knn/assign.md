@@ -40,7 +40,7 @@ Coding:
 Analysis:
 
 1.  What is the role of the number of training points to accuracy?
-1.  What is the role of ~k~ to accuracy?
+1.  What is the role of _k_ to accuracy?
 1.  What numbers get confused with each other most easily?
 
 What to turn in
