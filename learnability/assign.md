@@ -10,7 +10,11 @@ For this homework, we will not be building anything practical.  Instead, we will
 implement algorithms that demonstrate and measure the importance of having
 hypothesis classes that aren't too powerful.
 
-*Rademacher*: You'll experimentally verify Rademacher results for various classes of hypotheses.  This requires two steps: generating hypotheses and evaluating their correlation with random labels.  The first step is the hardest.  You'll need to take in a dataset as input and then generate all of the possible hypotheses for that dataset (within a specified hypothesis class). 
+*Rademacher*: You'll experimentally verify Rademacher results for various classes of hypotheses.  This requires two steps: generating hypotheses and evaluating their correlation with random labels.  The first step is the hardest.  You'll need to take in a dataset as input and then generate all of the possible hypotheses for that dataset (within a specified hypothesis class).  Then, you'll implement code that explicitly computes the Rademacher correlation given those hypotheses.
+
+The two hypothesis classes you'll look at are hyperplanes that pass through the origin and axis aligned rectangles.
+
+*VC Dimension of a SIN Classifier*: This requires some thought but should be very simple to implement.  Given a training set of integers, you'll need to perfectly classify the training set with a single parameter sin classifier.
 
 Implementation
 -
