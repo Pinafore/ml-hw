@@ -74,6 +74,7 @@ Questions / Hints
 * If you have questions that aren’t answered in this list, feel free to ask them
   on Piazza.
 
+
     Can I look at TV Tropes?
 
 In order to gain insight about the data yes, however, your feature extraction must be fully automatic and cannot use any data (beyond what I've given you) from the TV Tropes webpage.
@@ -81,10 +82,6 @@ In order to gain insight about the data yes, however, your feature extraction mu
     Can I use IMDB, Wikipedia, or a dictionary?
 
 Yes, but you are not required to. So long as your features are fully automated, they can use any dataset other than TV Tropes. Be careful, however, that your dataset does not somehow include TV Tropes (e.g. using all webpages indexed by Google will likely include TV Tropes).
-
-    Does it matter which classifier I use? Rattle is pretty slow for sparse features – can I use something else?
-
-Use whatever works for you. If you'd rather use third-party classifiers, that's fine to (be sure to say what you're using in your writeup, though). Rattle should be fine if you're not using many many features.
 
     Can I combine features?
 
@@ -94,10 +91,6 @@ Yes, and you probably should. This will likely be quite effective.
 
 That is not fully automatic, so no. You should be able to run your feature extraction without any human intervention.  If you want to collect data from Mechanical Turk to train a classifier that you can then use to generate your features, that is fine.  (But that’s way too much work for this assignment.)
 
-	Can I use Perl/Python/Excel/R/Java to extract features?
-
-Yes.  You only have to turn in your actual features (in csv files or libsvm) and your analysis of the features.  How you get those features is entirely up to you.  There is no right way to extract the features (and in fact depends on the kind of features you’re using).
-
-	What sort of improvement is “good” or “enough”?
+    What sort of improvement is “good” or “enough”?
 
 If you have 5-10% improvement over the baseline with your features, that’s more than sufficient.  If you fail to get that improvement but have tried reasonable features, that satisfies the requirements of assignment.  However, the extra credit for “winning” the class competition depends on the performance of other students.
