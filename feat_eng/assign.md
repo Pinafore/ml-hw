@@ -55,6 +55,8 @@ In addition:
 Your username should be of the form _CU\_IDENTIKEY_
 that we can easily map it to your grade.
 
+The sample code produces a two column CSV file that is correctly formatted for Kaggle (predictions.csv).  It should have the id as the first column and the prediction as the second column.
+
 How this Assignment is Graded (35+ points)
 ------------------------------
 
