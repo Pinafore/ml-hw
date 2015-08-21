@@ -10,6 +10,8 @@ For this homework, we will not be building anything practical.  Instead, we will
 implement algorithms that demonstrate and measure the importance of having
 hypothesis classes that aren't too powerful.
 
+*Rademacher*: You'll experimentally verify Rademacher results for various classes of hypotheses.  This requires two steps: generating hypotheses and evaluating their correlation with random labels.  The first step is the hardest.  You'll need to take in a dataset as input and then generate all of the possible hypotheses for that dataset (within a specified hypothesis class). 
+
 Implementation
 -
 
@@ -46,6 +48,11 @@ Turn in your completed python files
 
 As well as a discussion file
 * discussion.pdf
+
+Extra Credit
+-
+
+You can get extra credit for implementing a function that returns all possible hyperplanes (not just those that pass through the origin) that divide a dataset.
 
 Hints
 ------
