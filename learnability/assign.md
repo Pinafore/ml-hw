@@ -1,7 +1,7 @@
 Learnability
 =
 
-Due: 2. Oct (50 Points)
+Due: 2. Oct (40 Points)
 
 Overview
 --------
@@ -9,6 +9,16 @@ Overview
 For this homework, we will not be building anything practical.  Instead, we will
 implement algorithms that demonstrate and measure the importance of having
 hypothesis classes that aren't too powerful.
+
+*Rademacher*: You'll experimentally verify Rademacher results for various classes of hypotheses.  This requires two steps: generating hypotheses and evaluating their correlation with random labels.  The first step is the hardest.  You'll need to take in a dataset as input and then generate all of the possible hypotheses for that dataset (within a specified hypothesis class).  Then, you'll implement code that explicitly computes the Rademacher correlation given those hypotheses.
+
+The two hypothesis classes you'll look at are hyperplanes that pass through the origin and axis aligned rectangles.  You'll want to generate, given a set of points, all of the hypotheses that generate *distinct* classifications of the data.  
+
+![Distinct Hypotheses for Two Hypothesis Classes](hypotheses.png "Distinct Hypotheses")
+
+In the image above we show the distinct hypotheses for the same set of four points in 2D space (this is the last set of tests in the unit tests).  There are fourteen hypotheses for axis aligned rectangles but only six for the planes (each line can set the positive class to be to the left or to the right).  You'll need to generate all of the possible hypotheses.
+
+*VC Dimension of a SIN Classifier*: This requires some thought but should be very simple to implement.  Given a training set of integers, you'll need to perfectly classify the training set with a single parameter sin classifier.
 
 Implementation
 -
@@ -46,6 +56,11 @@ Turn in your completed python files
 
 As well as a discussion file
 * discussion.pdf
+
+Extra Credit
+-
+
+You can get extra credit for implementing a function that returns all possible hyperplanes (not just those that pass through the origin) that divide a dataset.
 
 Hints
 ------
