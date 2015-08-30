@@ -6,6 +6,8 @@ from numpy import array
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import SGDClassifier
 
+kTARGET_FIELD = 'spoiler'
+kTEXT_FIELD = 'sentence'
 
 
 class Featurizer:
@@ -27,20 +29,21 @@ class Featurizer:
 if __name__ == "__main__":
 
     # Cast to list to keep it all in memory
-    train = list(DictReader(open("train.csv", 'r')))
-    test = list(DictReader(open("test.csv", 'r')))
+    train = list(DictReader(open("../data/spoilers/train.csv", 'r')))
+    test = list(DictReader(open("../data/spoilers/test.csv", 'r')))
 
     feat = Featurizer()
 
     labels = []
     for line in train:
-        if not line['cat'] in labels:
-            labels.append(line['cat'])
+        if not line[kTARGET_FIELD] in labels:
+            labels.append(line[kTARGET_FIELD])
 
-    x_train = feat.train_feature(x['text'] for x in train)
-    x_test = feat.test_feature(x['text'] for x in test)
+    x_train = feat.train_feature(x[kTEXT_FIELD] for x in train)
+    x_test = feat.test_feature(x[kTEXT_FIELD] for x in test)
 
-    y_train = array(list(labels.index(x['cat']) for x in train))
+    y_train = array(list(labels.index(x[kTARGET_FIELD])
+                         for x in train))
 
     # Train classifier
     lr = SGDClassifier(loss='log', penalty='l2', shuffle=True)
