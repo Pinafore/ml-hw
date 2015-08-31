@@ -46,7 +46,7 @@ In your discussion file:
   those numbers is not sufficient; you must make a mathematical argument)
 * prove that your frequency correctly classifies any training set (up to
   floating point precision on the computer).
-* Suppose we are classifying *real* numbers, not integers.  The classifier returns positive if the point is greater than $$\sin( \omega t)$$ and negative otherwise.  Give an example of four points that cannot be shattered by this classifier.  How does this relate to the VC dimension.
+* Suppose we are classifying *real* numbers, not integers.  The classifier returns positive if the point is greater than sin( omega t) and negative otherwise.  Give an example of four points that cannot be shattered by this classifier.  How does this relate to the VC dimension.
 
 What to turn in
 ------
