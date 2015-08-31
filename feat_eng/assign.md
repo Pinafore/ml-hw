@@ -23,6 +23,23 @@ It may seem straightforward, but do not start this at the last minute.  There
 are often many things that go wrong in testing out features, and you'll want to
 make sure your features work well once you've found them.
 
+Analysis
+--------------
+
+The job of the written portion of the homework is to convince the grader that:
+* Your new features work
+* You understand what the new features are doing
+* You had a clear methodology for incorporating the new features
+
+Make sure that you have examples and quantitative evidence that your
+features are working well.  Be sure to explain how used the data
+(e.g., did you have a development set) and how you inspected the
+results.
+
+A sure way of getting a low grade is simply listing what you tried and
+reporting the Kaggle score for each.  You are expected to pay more
+attention to what is going on with the data and take a data-driven
+approach to feature engineering.
 
 About the Data
 --------------
@@ -60,12 +77,19 @@ The sample code produces a two column CSV file that is correctly formatted for K
 How this Assignment is Graded (35+ points)
 ------------------------------
 
-25 points of your score will be generated from your performance on the the classification competition on Kaggle.  The performance will be evaluated on accuracy on a held-out test set.
+15 points of your score will be generated from your performance on the
+the classification competition on Kaggle.  The performance will be
+evaluated on accuracy on a held-out test set.
 
 You should be able to significantly
 improve on the baseline system (as reported by the Kaggle system).  If you can
 do much better than your peers, you can earn extra credit (up to 15 points).
-Your writeup explanation is worth 10 points.
+Your writeup explanation is worth 20 points.
+
+Unlike previous homeworks, the writeup is worth relatively more of
+this assignment and will be graded with more scrutiny.  Do not shirk
+this part of the assignment.  Make sure your fulfill all of the the
+requirements of the writeup.
 
 Questions / Hints
 ----------------

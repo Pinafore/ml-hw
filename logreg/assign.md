@@ -24,7 +24,7 @@ points.
 What you have to do
 ----
 
-Coding:
+Coding (25 points):
 
 1. Understand how the code is creating feature vectors (this will help you code the solution and to do the later analysis).  You don't actually need to write any code for this, however.
 2. (Optional) Store necessary data in the constructor so you can do classification later.  
@@ -33,7 +33,7 @@ Coding:
 4. Modify the _sg update_ function so that it finds regularized updates.
     *NOTE*: You should only update [non-zero dimensions](http://lingpipe.files.wordpress.com/2008/04/lazysgdregression.pdf).
 
-Analysis:
+Analysis (5 points):
 
 1. What is the role of the learning rate?
 2. How many passes over the data do you need to complete?
