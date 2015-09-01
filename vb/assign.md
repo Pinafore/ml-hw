@@ -1,7 +1,7 @@
 Variational Inference for Topic Models
 =
 
-Due: 24. April
+Due: 20. November
 
 Overview
 --------

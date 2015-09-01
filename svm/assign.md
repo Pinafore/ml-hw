@@ -1,7 +1,7 @@
 Support Vector Machines
 =
 
-Due: 6. March
+Due: 9. October
 
 Overview
 --------
