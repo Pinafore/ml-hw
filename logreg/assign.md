@@ -13,10 +13,10 @@ whether documents are talking about hockey or baseball.
 ![Hockey and Baseball: Are they really that different?](baseball_hockey.jpg "Two sports I know nothing about")
 
 This will be slightly more difficult than the last homework (the
-difficulty will slowly ramp upward).  You should not use any libraries
+difficulty will slowly ramp upward).  You should not use any libraries that implement any of the functionality of logistic regression
 for this assignment; logistic regression is implemented in scikit
 learn, but you should do everything by hand now.  You'll be able to
-use libraries in the future.
+use library implementations of logistic regression in the future (the next homework, even).
 
 You'll turn in your code on Moodle.  This assignment is worth 30
 points.
