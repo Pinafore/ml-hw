@@ -1,7 +1,7 @@
 Boosting
 =
 
-Due: 13. Mar (20 Points)
+Due: 16. Oct (20 Points)
 
 Overview
 --------

@@ -75,7 +75,7 @@ class Knearest:
         # Finish this function to find the k closest points, query the
         # majority function, and return the value.
 
-        return self.majority(list(random.randint(0, len(self._y)) \
+        return self.majority(list(random.randrange(len(self._y)) \
                                   for x in xrange(self._k)))
 
     def confusion_matrix(self, test_x, test_y):

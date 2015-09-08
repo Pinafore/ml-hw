@@ -20,7 +20,7 @@ In the image above we show the distinct hypotheses for the same set of four poin
 
 *VC Dimension of a SIN Classifier*: This requires some thought but should be very simple to implement.  Given a training set of integers, you'll need to perfectly classify the training set with a single parameter sin classifier.
 
-Implementation
+Implementation (25 points)
 -
 
 Complete the following functions:
@@ -36,7 +36,7 @@ What you can assume
 You can assume any inequality in the books appendicies or anything we *proved*
 in class.  If you have doubts, ask on Piazza.
 
-Analysis
+Analysis (15 points)
 -
 
 In your discussion file:
@@ -46,6 +46,14 @@ In your discussion file:
   those numbers is not sufficient; you must make a mathematical argument)
 * prove that your frequency correctly classifies any training set (up to
   floating point precision on the computer).
+* Suppose we are classifying *real* numbers, not integers.  The
+  classifier returns positive if the point is greater than the sin
+  function and negative otherwise.  
+
+![Classification Rule](sin_hypothesis.png "h_\omega(x : x \in \mathbb{R} ) \equiv \begin{cases} 1& \mbox{if } \sin(\omega x) \geq 0 \\ 0 & \mbox{otherwise} \end{cases}")
+
+  Give an example of four points that cannot be shattered by this
+  classifier.  How does this relate to the VC dimension?
 
 What to turn in
 ------
