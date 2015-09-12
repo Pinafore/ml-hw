@@ -94,8 +94,8 @@ requirements of the writeup.
 Questions / Hints
 ----------------
 
-* Don't use all the data until you're ready.  Use the \texttt{--subsample}
-  option to use a subset of the data to see how you're doing on smaller
+* Don't use all the data until you're ready.  You may want to add a \texttt{--limit}
+  option (as was provided in the KNN homework) to use a subset of the data to see how you're doing on smaller
   datasets.
 * Examine the features that are being used.
 * Do error analyses.
