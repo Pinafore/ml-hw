@@ -66,7 +66,7 @@ https://inclass.kaggle.com/c/spoiler-detection
 
 In addition:
 * please turn in a file called _explanation.pdf_ explaining your process of
-  creating additional features.  Make sure you state your username there.
+  creating additional features.  Make sure you state your username there.  This should only be one page of text, but it is okay if graphs spill onto a second page.
 * upload your feature extraction code that produced your predictions
 
 Your username should be of the form _CU\_IDENTIKEY_
