@@ -102,7 +102,7 @@ class Knearest:
         return d
 
     @staticmethod
-    def acccuracy(confusion_matrix):
+    def accuracy(confusion_matrix):
         """
         Given a confusion matrix, compute the accuracy of the underlying classifier.
         """
@@ -147,4 +147,4 @@ if __name__ == "__main__":
     for ii in xrange(10):
         print("%i:\t" % ii + "\t".join(str(confusion[ii].get(x, 0))
                                        for x in xrange(10)))
-    print("Accuracy: %f" % knn.acccuracy(confusion))
+    print("Accuracy: %f" % knn.accuracy(confusion))
