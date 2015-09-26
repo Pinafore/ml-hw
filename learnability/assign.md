@@ -73,6 +73,7 @@ You can get extra credit for implementing a function that returns all possible h
 Hints
 ------
 1.  Feel free to use _bst.py_ for finding points in a range
+2.  The classifiers return boolean classifications, but the correlation function needs +/-1 results
 1.  You may want to use trigonometric functions for the hyperplane function
 1.  Do not make your code too slow; you will not get full credits if your code
     does not complete in reasonable time
