@@ -11,6 +11,8 @@ def assign_exists(data, classifiers, pattern):
     """
     Given a dataset and set of classifiers, make sure that the classification
     pattern specified exists somewhere in the classifier set.
+    
+    This is testing whether a particular dichotomyis realized in your set of classifiers.  One of the elements in the hyps argument should produce the classification result in pattern.
     """
 
     val = False
