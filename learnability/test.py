@@ -62,7 +62,7 @@ class TestLearnability(unittest.TestCase):
     def test_rec_three_points(self):
         hyps = list(axis_aligned_hypotheses(self._2d[3]))
         for pp in [[False, False, False],
-                   [False, True, False], [False, True, False], [False, False, True],
+                   [False, True, False], [True, False, False], [False, False, True],
                    [True, True, False], [True, False, True],
                    [True, True, True]]:
             self.assertTrue(assign_exists(self._2d[3], hyps, pp))
