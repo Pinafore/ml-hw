@@ -21,9 +21,9 @@
 \end{center}
 
 \begin{enumerate}
-  \item Simplified AdaBoost.  Suppose we simplify AdaBoost by setting the
-    parambeter $\alpha_t$ to a fixed value $\alpha_t = \alpha> 0$, independent of
-    round $t$.
+  \item Simplified AdaBoost.  Suppose we simplify AdaBoost by setting
+    the parambeter $\alpha_t$ to a fixed value $\alpha_t = \alpha> 0$,
+    independent of round $t$.
     \begin{enumerate}
       \item Let $\gamma$ be such that $\left(\frac{1}{2} - \epsilon_t \right)
         \geq \gamma > 0$.  Find the optimal $\alpha$ as a function of $\gamma$
@@ -39,15 +39,16 @@
     \end{enumerate}
 
     \item Update guarantee.  Assume that the main weak learner assumption of
-      AdaBoos holds.  Let $h_t$ be the base learner selected at round $t$.  Show
+      AdaBoost holds.  Let $h_t$ be the base learner selected at round $t$.  Show
       that the base learner $h_{t+1}$ selected at round $t+1$ must be different
       from $h_t$.
 
-    \item Fix $\epsilon \in (0, .5)$.  Let the training data be $m$ points.
-      $\frac{m}{4}$ negative points are each at $(1,1)$ and $(-1, -1)$ and
-      $\frac{m}{4}$ points are each at $(1, -1)$ and $(-1, +1)$.  What does
-      AdaBoost do with boosting stumps as the base learner?  What solution does
-      the algorithm return after $T$ rounds?
+    \item Fix $\epsilon \in (0, .5)$.  Let the training data be $m$
+      points.  $\frac{m}{4}$ negative points are each at $(1,1)$ and
+      $(-1, -1)$; $\frac{m (1 - \epsilon)}{4}$ points are each at $(1,
+      -1)$; and \frac{m (1 + \epsilon)}{4} points are at $(-1, +1)$.
+      What does AdaBoost do with boosting stumps as the base learner?
+      What solution does the algorithm return after $T$ rounds?
 
 \end{enumerate}
 
