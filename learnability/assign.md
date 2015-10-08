@@ -47,8 +47,8 @@ In your discussion file:
 * prove that your frequency correctly classifies any training set (up to
   floating point precision on the computer).
 * Suppose we are classifying *real* numbers, not integers.  The
-  classifier returns positive if the point is greater than the sin
-  function and negative otherwise.  
+  classifier returns positive (1) if the point is greater than the sin
+  function and negative (0) otherwise.  
 
 ![Classification Rule](sin_hypothesis.png "h_\omega(x : x \in \mathbb{R} ) \equiv \begin{cases} 1& \mbox{if } \sin(\omega x) \geq 0 \\ 0 & \mbox{otherwise} \end{cases}")
 

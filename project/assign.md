@@ -21,6 +21,14 @@ Groups
 
 You must form a group of 3-5 students enrolled in this course.  If you have a project idea and you're not able to convince two other people to work on it, it's probably not that interesting.  You should instead join another group.  
 
+Undergrads
+==================
+
+If you're in the undergrad section of the course, you have two choices:
+
+* Elect before the midterm to use the graduate grading scheme (i.e., only midterm and project).  If you take the final, it replaces the midterm.  You must do the project no matter what, and the final exam is optional.
+* If after the midterm you think that you want to do a project, you can either join an existing group (organize via Piazza) or create a new group.  If you create a new group, schedule a meeting with me.
+
 Meeting with Professor
 ==================
 Sometime during the week of 9. October, you'll meet with the professor to discuss your project and to get feedback on your initial ideas.
