@@ -34,6 +34,18 @@ We may be able to add additional data in November.
 
 You get a good grade, my thanks, and your ideas will be integrated into the next version of our system.  You can also keep working and try to win the big Kaggle competition in February.
 
+## Data
+
+We provide the following files:
+* [sci_train.csv] - the training set
+* [sci_test.csv] - the test set
+* [sci_sample.csv] - a sample submission file in the correct format
+
+With the following fields:
+* id - The ID of the question
+* correctAnswer - The correct answer of the question (based on columns)
+* answerA/B/C/D - A candidate answer to the question (always a Wikipedia page)
+
 ## FAQ
 
 *Do I have to do both challenges?*
