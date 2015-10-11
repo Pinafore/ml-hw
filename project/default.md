@@ -37,9 +37,9 @@ You get a good grade, my thanks, and your ideas will be integrated into the next
 ## Data
 
 We provide the following files:
-* [sci_train.csv] - the training set
-* [sci_test.csv] - the test set
-* [sci_sample.csv] - a sample submission file in the correct format
+* [sci_train.csv](sci_train.csv) - the training set
+* [sci_test.csv](sci_test.csv) - the test set
+* [sci_sample.csv](sci_sample.csv) - a sample submission file in the correct format
 
 With the following fields:
 * id - The ID of the question
