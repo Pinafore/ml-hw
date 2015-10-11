@@ -2,9 +2,7 @@
 
 To make sure that folks have a good project to work on, I make sure to provide a project (with data) that folks can work on even if they are not inspired with a great project idea.
 
-This is a project that I care about.  One project that I work on is to help computers answer questions.  
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kTXJCEvCDYk" frameborder="0" allowfullscreen></iframe>
+This is a project that I care about.  One project that I work on is to help [https://www.youtube.com/embed/kTXJCEvCDYk](computers answer questions).  
 
 As you can see from the video, our system does not answer science questions very well.  That's where I need your help.
 
@@ -18,11 +16,11 @@ Unlike the AI2 challenge, all of our questions will have answers that are entiti
 
 I've set up a Kaggle site in the same spirit as the Kaggle challenge.
 
-We may be able to add additional data
+We may be able to add additional data in November.
 
 ## What happens if I do well?
 
-You get a good grade, my thanks, and your ideas will be integrated into the next version of our system.
+You get a good grade, my thanks, and your ideas will be integrated into the next version of our system.  You can also keep working and try to win the big Kaggle competition in February.
 
 ## FAQ
 
