@@ -6,6 +6,10 @@ This is a project that I care about.  One project that I work on is to help [com
 
 As you can see from the video, our system does not answer science questions very well.  That's where I need your help.
 
+The setup is relatively simple.  There are a bunch of questions of the form:
+
+""This phenomenon occurs twice as quickly in the Moran model as in the Wright-Fisher model.""
+
 ## AI2 Science Challenge
 
 This is improtant for me, but other folks are working on similar challenges.  There's a big [Kaggle challenge](https://www.kaggle.com/c/the-allen-ai-science-challenge) trying to answer science questions.  We'll use the same data format that they're using.
