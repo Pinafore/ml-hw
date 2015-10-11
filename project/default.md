@@ -4,11 +4,13 @@ To make sure that folks have a good project to work on, I make sure to provide a
 
 This is a project that I care about.  One project that I work on is to help computers answer questions.  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kTXJCEvCDYk" frameborder="0" allowfullscreen></iframe>
+
 As you can see from the video, our system does not answer science questions very well.  That's where I need your help.
 
 ## AI2 Science Challenge
 
-This is improtant for me, but other folks are working on similar challenges.  There's a big Kaggle challenge trying to answer science questions.  We'll use the same data format that they're using.
+This is improtant for me, but other folks are working on similar challenges.  There's a big [Kaggle challenge](https://www.kaggle.com/c/the-allen-ai-science-challenge) trying to answer science questions.  We'll use the same data format that they're using.
 
 ## How our Data are Different
 
