@@ -27,7 +27,7 @@ This is improtant for me, but other folks are working on similar challenges.  Th
 
 Unlike the AI2 challenge, all of our questions will have answers that are entities (i.e., things that have Wikipedia pages).  I suspect that this will make it quite a bit easier.  So you may want to try to do our challenge first; but if your method generalizes to both, then that's great!
 
-I've set up a [Kaggle site](inclass.kaggle.com/c/quiz-bowl-science) in the same spirit.
+I've set up a [Kaggle site](http://inclass.kaggle.com/c/quiz-bowl-science) in the same spirit.
 
 We may be able to add additional data in November.
 
