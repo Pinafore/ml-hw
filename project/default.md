@@ -22,11 +22,11 @@ In the training data, you know that the correct answer is the the first answer (
 
 This is improtant for me, but other folks are working on similar challenges.  There's a big [Kaggle challenge](https://www.kaggle.com/c/the-allen-ai-science-challenge) trying to answer science questions.  We'll use the same data format that they're using.
 
-## How our Data are Different
+## How our Data are Different, where to submit
 
 Unlike the AI2 challenge, all of our questions will have answers that are entities (i.e., things that have Wikipedia pages).  I suspect that this will make it quite a bit easier.  So you may want to try to do our challenge first; but if your method generalizes to both, then that's great!
 
-I've set up a Kaggle site in the same spirit as the Kaggle challenge.
+I've set up a [Kaggle site](inclass.kaggle.com/c/quiz-bowl-science) in the same spirit.
 
 We may be able to add additional data in November.
 
