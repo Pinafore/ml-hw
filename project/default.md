@@ -2,7 +2,7 @@
 
 To make sure that folks have a good project to work on, I make sure to provide a project (with data) that folks can work on even if they are not inspired with a great project idea.
 
-This is a project that I care about.  One project that I work on is to help [https://www.youtube.com/embed/kTXJCEvCDYk](computers answer questions).  
+This is a project that I care about.  One project that I work on is to help [computers answer questions](https://www.youtube.com/embed/kTXJCEvCDYk).  
 
 As you can see from the video, our system does not answer science questions very well.  That's where I need your help.
 
