@@ -11,6 +11,7 @@ The setup is relatively simple.  There are a bunch of questions of the form:
 > This phenomenon occurs twice as quickly in the Moran model as in the Wright-Fisher model.
 
 You have four options, one of which is correct:
+
 1. Genetic drift
 2. Hamiltonian (quantum mechanics)
 3. Georg Wilhelm Friedrich Hegel
