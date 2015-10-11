@@ -8,7 +8,15 @@ As you can see from the video, our system does not answer science questions very
 
 The setup is relatively simple.  There are a bunch of questions of the form:
 
-""This phenomenon occurs twice as quickly in the Moran model as in the Wright-Fisher model.""
+> This phenomenon occurs twice as quickly in the Moran model as in the Wright-Fisher model.
+
+You have four options, one of which is correct:
+1. Genetic drift
+2. Hamiltonian (quantum mechanics)
+3. Georg Wilhelm Friedrich Hegel
+4. Group (mathematics)
+
+In the training data, you know that the correct answer is the the first answer (Genetic drift).  Your goal is to use machine learning to learn how to answer these questions on test questions which have the same form.
 
 ## AI2 Science Challenge
 
@@ -35,3 +43,7 @@ No, you can choose to focus on one or othe other.
 *Do you have any clues/code?*
 
 You can take a look at our code; it might give you ideas.  However, it doesn't do anything science specific, which will likely be helpful.
+
+*Can I use external data?*
+
+Yes, in fact I don't think it's possible to succeed without using external data.  However, you're not allowed to use quiz bowl questions to help you answer these questions (beyond the data I provide).
