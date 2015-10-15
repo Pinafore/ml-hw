@@ -2,7 +2,7 @@
 Subject
 ==================
 
-You may either enter a shared project (on (question answering)[default.md]) or
+You may either enter a shared project (on [question answering](default.md)) or
 choose a project of your own.
 
 If you choose to work on a project of your own choosing, it must:
