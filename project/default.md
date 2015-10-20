@@ -55,7 +55,7 @@ No, you can choose to focus on one or othe other.
 
 *Do you have any clues/code?*
 
-You can take a look at our code; it might give you ideas.  However, it doesn't do anything science specific, which will likely be helpful.
+You can take a look at [our code](https://github.com/pinafore/qb); it might give you ideas.  However, it doesn't do anything science specific, which will likely be helpful.
 
 *Can I use external data?*
 
