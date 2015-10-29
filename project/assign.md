@@ -49,7 +49,7 @@ should describe:
   have your results by 13. November)
 
 Have the person in your group whose name is alphabetically first
-submit your assignment on Moodle.  Late days cannot be used on this
+submit your assignment on Piazza.  Late days cannot be used on this
 assignment.
 
 Final Presentation
