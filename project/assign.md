@@ -46,7 +46,7 @@ should describe:
 * What techniques you will explore 
 
 * Your timeline for completing the project (be realistic; you should
-  have your results by 13. November)
+  have your first results by 13. November)
 
 Have the person in your group whose name is alphabetically first
 submit your assignment on Piazza.  Late days cannot be used on this
