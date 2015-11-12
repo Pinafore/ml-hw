@@ -27,6 +27,10 @@ Analysis:
 1.  Run a topic model on the supplied AP data (data/ap) and turn the resulting
     topic file (topics.txt)
 
+Extra Credit:
+
+1. Implement the *update alpha* function 
+
 What to turn in
 -
 
