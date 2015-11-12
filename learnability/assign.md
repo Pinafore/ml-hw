@@ -65,7 +65,7 @@ Turn in your completed python files
 As well as a discussion file
 * discussion.pdf
 
-Extra Credit
+Extra Credit (up to 5 points)
 -
 
 You can get extra credit for implementing a function that returns all possible hyperplanes (not just those that pass through the origin) that divide a dataset.

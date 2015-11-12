@@ -2,7 +2,7 @@
 Subject
 ==================
 
-You may either enter a shared project (on question answering; details to be announced) or
+You may either enter a shared project (on [question answering](default.md)) or
 choose a project of your own.
 
 If you choose to work on a project of your own choosing, it must:
@@ -46,10 +46,10 @@ should describe:
 * What techniques you will explore 
 
 * Your timeline for completing the project (be realistic; you should
-  have your results by 13. November)
+  have your first results by 13. November)
 
 Have the person in your group whose name is alphabetically first
-submit your assignment on Moodle.  Late days cannot be used on this
+submit your assignment on Piazza.  Late days cannot be used on this
 assignment.
 
 Final Presentation
