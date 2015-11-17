@@ -30,6 +30,7 @@ Analysis:
 Extra Credit:
 
 1. Implement the *update alpha* function 
+2. Compute held out likelihood for the test data using the *ho likelihood* function
 
 What to turn in
 -
