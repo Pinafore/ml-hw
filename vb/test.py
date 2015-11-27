@@ -43,19 +43,16 @@ class TestVB(unittest.TestCase):
     def test_m(self):
         vb = VariationalBayes()
         vb.init([], "stuck", 3)
-        # vb.m_step(self.init_beta)
-
-        # self.assertAlmostEqual(self.init_beta[2][3], vb._beta[2][3])
 
         topic_count = array([[5., 4., 3., 2., 1.],
                              [0., 2., 2., 4., 1.],
                              [1., 1., 1., 1., 1.]])
 
-        vb.m_step(topic_count)
-        self.assertAlmostEqual(vb._beta[2][3], .2)
-        self.assertAlmostEqual(vb._beta[0][0], .33333333)
-        self.assertAlmostEqual(vb._beta[1][4], .11111111)
-        self.assertAlmostEqual(vb._beta[0][3], .13333333)
+        new_beta = vb.m_step(topic_count)
+        self.assertAlmostEqual(new_beta[2][3], .2)
+        self.assertAlmostEqual(new_beta[0][0], .33333333)
+        self.assertAlmostEqual(new_beta[1][4], .11111111)
+        self.assertAlmostEqual(new_beta[0][3], .13333333)
 
 if __name__ == '__main__':
     unittest.main()
