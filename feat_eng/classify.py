@@ -22,9 +22,15 @@ class Featurizer:
 
     def show_top10(self, classifier, categories):
         feature_names = np.asarray(self.vectorizer.get_feature_names())
-        for i, category in enumerate(categories):
-            top10 = np.argsort(classifier.coef_[i])[-10:]
-            print("%s: %s" % (category, " ".join(feature_names[top10])))
+        if len(categories) == 2:
+            top10 = np.argsort(classifier.coef_[0])[-10:]
+            bottom10 = np.argsort(classifier.coef_[0])[:10]
+            print("Pos: %s" % " ".join(feature_names[top10]))
+            print("Neg: %s" % " ".join(feature_names[bottom10]))
+        else:
+            for i, category in enumerate(categories):
+                top10 = np.argsort(classifier.coef_[i])[-10:]
+                print("%s: %s" % (category, " ".join(feature_names[top10])))
 
 if __name__ == "__main__":
 
@@ -39,11 +45,15 @@ if __name__ == "__main__":
         if not line[kTARGET_FIELD] in labels:
             labels.append(line[kTARGET_FIELD])
 
+    print("Label set: %s" % str(labels))
     x_train = feat.train_feature(x[kTEXT_FIELD] for x in train)
     x_test = feat.test_feature(x[kTEXT_FIELD] for x in test)
 
     y_train = array(list(labels.index(x[kTARGET_FIELD])
                          for x in train))
+
+    print(len(train), len(y_train))
+    print(set(y_train))
 
     # Train classifier
     lr = SGDClassifier(loss='log', penalty='l2', shuffle=True)

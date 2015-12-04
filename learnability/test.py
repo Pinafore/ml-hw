@@ -11,6 +11,8 @@ def assign_exists(data, classifiers, pattern):
     """
     Given a dataset and set of classifiers, make sure that the classification
     pattern specified exists somewhere in the classifier set.
+    
+    This is testing whether a particular dichotomyis realized in your set of classifiers.  One of the elements in the hyps argument should produce the classification result in pattern.
     """
 
     val = False
@@ -60,7 +62,7 @@ class TestLearnability(unittest.TestCase):
     def test_rec_three_points(self):
         hyps = list(axis_aligned_hypotheses(self._2d[3]))
         for pp in [[False, False, False],
-                   [False, True, False], [False, True, False], [False, False, True],
+                   [False, True, False], [True, False, False], [False, False, True],
                    [True, True, False], [True, False, True],
                    [True, True, True]]:
             self.assertTrue(assign_exists(self._2d[3], hyps, pp))

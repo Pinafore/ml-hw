@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{url,graphicx,tabularx,array,geometry}
+\setlength{\parskip}{1ex} %--skip lines between paragraphs
+\setlength{\parindent}{0pt} %--don't indent paragraphs
+
+%-- Commands for header
+\renewcommand{\title}[1]{\textbf{#1}\\}
+\renewcommand{\line}{\begin{tabularx}{\textwidth}{X>{\raggedleft}X}\hline\\\end{tabularx}\\[-0.5cm]}
+\newcommand{\leftright}[2]{\begin{tabularx}{\textwidth}{X>{\raggedleft}X}#1%
+& #2\\\end{tabularx}\\[-0.5cm]}
+
+%\linespread{2} %-- Uncomment for Double Space
+\begin{document}
+
+\title{Machine Learning: Boosting}
+\line
+\leftright{\today}{Jordan Boyd-Graber} %-- left and right positions in the header
+
+\begin{center}
+  Problems from \emph{Foundations of Machine Learning} by Mohri et al.
+\end{center}
+
+\begin{enumerate}
+  \item (FML 6.8) Simplified AdaBoost.  Suppose we simplify AdaBoost by setting
+    the parameter $\alpha_t$ to a fixed value $\alpha_t = \alpha> 0$,
+    independent of round $t$.
+    \begin{enumerate}
+      \item Let $\gamma$ be such that $\left(\frac{1}{2} - \epsilon_t \right)
+        \geq \gamma > 0$.  Find the optimal $\alpha$ as a function of $\gamma$
+        wrt empirical error.
+
+     \item For the value of $\alpha$ that you found, does the algorithm assign
+       the same probability mass to correctly classified and misclassified
+       examples at each round?  If not, which set has higher probability?
+
+     \item Using the previous value of $\alpha$, give a bound on the empirical
+       error of the algorithm as a function only of $\gamma$ and the number of
+       rounds of boosting ($T$).
+    \end{enumerate}
+
+    \item (FML 6.3) Update guarantee.  Assume that the main weak learner assumption of
+      AdaBoost holds.  Let $h_t$ be the base learner selected at round $t$.  Show
+      that the base learner $h_{t+1}$ selected at round $t+1$ must be different
+      from $h_t$.
+
+    \item (FML 6.6) Fix $\epsilon \in (0, .5)$.  Let the training data be $m$
+      points.  $\frac{m}{4}$ negative points are each at $(1,1)$ and
+      $(-1, -1)$; $\frac{m (1 - \epsilon)}{4}$ positive points are each at $(1,
+      -1)$; and $\frac{m (1 + \epsilon)}{4}$ positive points are at $(-1, +1)$.
+      What does AdaBoost do with boosting stumps as the base learner?
+      What solution does the algorithm return after $T$ rounds?
+
+\end{enumerate}
+
+\end{document}

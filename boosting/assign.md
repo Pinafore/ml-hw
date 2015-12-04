@@ -1,7 +1,7 @@
 Boosting
 =
 
-Due: 16. Oct (20 Points)
+Due: 16. Oct (30 Points)
 
 Overview
 --------
@@ -38,5 +38,4 @@ https://www.math.hmc.edu/homework/
 Problems
 ------
 
-Complete 6.3 and 6.6 from the Foundations of Machine Learning textbook.  You may
-want to use 6.3 in your solution to 6.6, so I'd suggest doing that first.
+There are three problems in the LaTeX file boosting.tex

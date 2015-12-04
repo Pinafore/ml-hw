@@ -47,8 +47,8 @@ In your discussion file:
 * prove that your frequency correctly classifies any training set (up to
   floating point precision on the computer).
 * Suppose we are classifying *real* numbers, not integers.  The
-  classifier returns positive if the point is greater than the sin
-  function and negative otherwise.  
+  classifier returns positive (1) if the point is greater than the sin
+  function and negative (0) otherwise.  
 
 ![Classification Rule](sin_hypothesis.png "h_\omega(x : x \in \mathbb{R} ) \equiv \begin{cases} 1& \mbox{if } \sin(\omega x) \geq 0 \\ 0 & \mbox{otherwise} \end{cases}")
 
@@ -65,7 +65,7 @@ Turn in your completed python files
 As well as a discussion file
 * discussion.pdf
 
-Extra Credit
+Extra Credit (up to 5 points)
 -
 
 You can get extra credit for implementing a function that returns all possible hyperplanes (not just those that pass through the origin) that divide a dataset.
@@ -73,6 +73,7 @@ You can get extra credit for implementing a function that returns all possible h
 Hints
 ------
 1.  Feel free to use _bst.py_ for finding points in a range
+2.  The classifiers return boolean classifications, but the correlation function needs +/-1 results
 1.  You may want to use trigonometric functions for the hyperplane function
 1.  Do not make your code too slow; you will not get full credits if your code
     does not complete in reasonable time

@@ -2,8 +2,7 @@
 Subject
 ==================
 
-You may either enter a shared
-[Kaggle competition](https://inclass.kaggle.com/c/when-they-buzz2) or
+You may either enter a shared project (on [question answering](default.md)) or
 choose a project of your own.
 
 If you choose to work on a project of your own choosing, it must:
@@ -20,12 +19,24 @@ us to make sure you clearly convey why it's an interesting problem.
 Groups
 ==================
 
-You must form a group of 3-4 students enrolled in this course.  If you have a project idea and you're not able to convince two other people to work on it, it's probably not that interesting.  You should instead join another group.  
+You must form a group of 3-5 students enrolled in this course.  If you have a project idea and you're not able to convince two other people to work on it, it's probably not that interesting.  You should instead join another group.  
+
+Undergrads
+==================
+
+If you're in the undergrad section of the course, you have two choices:
+
+* Elect before the midterm to use the graduate grading scheme (i.e., only midterm and project).  If you take the final, it replaces the midterm.  You must do the project no matter what, and the final exam is optional.
+* If after the midterm you think that you want to do a project, you can either join an existing group (organize via Piazza) or create a new group.  If you create a new group, schedule a meeting with me.
+
+Meeting with Professor
+==================
+Sometime during the week of 9. October, you'll meet with the professor to discuss your project and to get feedback on your initial ideas.
 
 Proposal
 ==================
 
-The project proposal is due 3. April.  This one page PDF document
+The project proposal is due 30. October.  This one page PDF document
 should describe:
 
 * What project you're working on.  If you're not doing the shared competition, you must describe the task, data, and baselines clearly.
@@ -35,16 +46,16 @@ should describe:
 * What techniques you will explore 
 
 * Your timeline for completing the project (be realistic; you should
-  have your first Kaggle submission by 9. April)
+  have your first results by 13. November)
 
 Have the person in your group whose name is alphabetically first
-submit your assignment on Moodle.  Late days cannot be used on this
+submit your assignment on Piazza.  Late days cannot be used on this
 assignment.
 
 Final Presentation
 ======================
 
-The final presentation will be in class on 6. May (at 7:30, not the
+The final presentation will be in class on 15. December (at 13:30, not the
 usual class time).  In the final presentation you will:
 
 * Explain what you did
@@ -53,7 +64,7 @@ usual class time).  In the final presentation you will:
 
 * What challenges you had
 
-* Review how well you did (based on the Kaggle competition)
+* Review how well you did 
 
 * Provide an error analysis.  An error analysis must contain examples from the
   development set that you get wrong.  You should show those sentences
@@ -71,7 +82,7 @@ usual class time).  In the final presentation you will:
 * Presumably you did many different things; how did they each
   individually contribute to your final result?
 
-Each group has 10 minutes to deliver their presentation, plus a few
+Each group has 8 minutes to deliver their presentation, plus a few
 minutes for questions and swapping.  It is okay to go under time, but
 _do not_ go over time.  It will negatively impact your grade; I will
 cut you off if necessary.  (Sorry to be a jerk about this, but we have
@@ -80,7 +91,7 @@ enough groups that we cannot have much give on time.)
 Project Writeup
 ======================
 
-By 23:55 7. May, have the person in your group whose last name
+By 23:55 16. Dec, have the person in your group whose last name
 is alphabetically last submit their project writeup explaining what
 you did and what results you achieved on Moodle.  This document should
 make it clear:
@@ -91,7 +102,7 @@ make it clear:
 * Whether your technique worked or not
 
 Please do not go over 2500 words unless you have a really good reason.
-Images are a much better use of space than words, usually (there'€™s no
+Images are a much better use of space than words, usually (there's no
 limit on including images, but use judgement and be selective).
 
 Grade

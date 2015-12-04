@@ -62,7 +62,7 @@ def parse_data(corpus, vocab):
     return word_ids, word_cts
 
 
-class VariationalBayes:
+class VariationalBayes:u
     """
     Class for learning a topic model using variational inference
     """
@@ -158,6 +158,7 @@ class VariationalBayes:
                 print "Global iteration %i, doc %i" % \
                     (self._iteration, doc_id + 1)
 
+        self._gamma = gamma
         return topic_counts
 
     def m_step(self, topic_counts):
@@ -168,9 +169,27 @@ class VariationalBayes:
         """
 
         # TODO: Finish this function!
-        self._beta = self._beta
+        new_beta = self._beta
+        return new_beta
 
-    def run_iteration(self, local_iter):
+    def update_alpha(self, current_alpha=None, gamma=None):
+        """
+        Update the scalar parameter alpha based on a gamma matrix.  If
+        no gamma argument is supplied, use the current setting of
+        gamma.
+        """
+
+        if current_alpha is None:
+            current_alpha = self._alpha
+        if gamma is None:
+            gamma = self._gamma
+
+        # Update below line
+        new_alpha = current_alpha
+
+        return new_alpha
+
+    def run_iteration(self, local_iter, update_alpha=False):
         """
         Run a complete iteration of an e step and an m step of variational
         inference.
@@ -183,7 +202,9 @@ class VariationalBayes:
         clock_e_step = time.time() - clock_e_step
 
         clock_m_step = time.time()
-        self.m_step(topic_counts)
+        self._beta = self.m_step(topic_counts)
+        if update_alpha:
+            self._alpha = self.update_alpha()
 
         clock_m_step = time.time() - clock_m_step
 
@@ -230,6 +251,8 @@ if __name__ == "__main__":
                            type=int, default=5, required=False)
     argparser.add_argument("--topics_out", help="Where we write topics",
                            type=str, default="topics.txt", required=False)
+    argparser.add_argument('--update_alpha', dest='feature', action='store_true',
+                           help="Update alpha (only available if you implement EC)")
 
     flags = argparser.parse_args()
 
@@ -238,6 +261,6 @@ if __name__ == "__main__":
             flags.num_topics, flags.alpha)
 
     for ii in xrange(flags.iterations):
-        vb.run_iteration(flags.inner_iter)
+        vb.run_iteration(flags.inner_iter, flags.update_alpha)
 
     vb.export_beta(flags.topics_out)
