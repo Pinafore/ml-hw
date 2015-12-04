@@ -6,8 +6,8 @@ Due: 4. December
 Overview
 --------
 
-In this homework you'll explore the primal and dual representations of support
-vector machines.
+In this homework you'll explore the implementation of various variational parameter updates for
+Latent Dirichlet Allocation.
 
 You'll turn in your code on Moodle.  This assignment is worth 30
 points.
@@ -17,7 +17,7 @@ What you have to do
 
 Coding:
 
-1.  Given a beta parameter and a gamma vector, compute the variational paramter
+1.  Given a beta parameter and a gamma vector, compute the variational parameter
     *phi* for a given word by implementing the *new phi* function.
 1.  Given word counts, update the probability of a word given a topic in the m
     step of variational inference in the *m step* function.
