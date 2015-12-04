@@ -251,7 +251,7 @@ if __name__ == "__main__":
                            type=int, default=5, required=False)
     argparser.add_argument("--topics_out", help="Where we write topics",
                            type=str, default="topics.txt", required=False)
-    argparser.add_argument('--update_alpha', dest='feature', action='store_true',
+    argparser.add_argument('--update_alpha', dest='update_alpha', action='store_true',
                            help="Update alpha (only available if you implement EC)")
 
     flags = argparser.parse_args()
