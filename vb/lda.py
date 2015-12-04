@@ -62,7 +62,7 @@ def parse_data(corpus, vocab):
     return word_ids, word_cts
 
 
-class VariationalBayes:u
+class VariationalBayes:
     """
     Class for learning a topic model using variational inference
     """
