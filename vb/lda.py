@@ -62,7 +62,7 @@ def parse_data(corpus, vocab):
     return word_ids, word_cts
 
 
-class VariationalBayes:
+class VariationalBayes:u
     """
     Class for learning a topic model using variational inference
     """
@@ -189,7 +189,7 @@ class VariationalBayes:
 
         return new_alpha
 
-    def run_iteration(self, local_iter, update_alpha):
+    def run_iteration(self, local_iter, update_alpha=False):
         """
         Run a complete iteration of an e step and an m step of variational
         inference.
