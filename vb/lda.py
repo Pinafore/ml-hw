@@ -189,7 +189,7 @@ class VariationalBayes:
 
         return new_alpha
 
-    def run_iteration(self, local_iter):
+    def run_iteration(self, local_iter, update_alpha):
         """
         Run a complete iteration of an e step and an m step of variational
         inference.
@@ -203,7 +203,8 @@ class VariationalBayes:
 
         clock_m_step = time.time()
         self._beta = self.m_step(topic_counts)
-        self._alpha = self.update_alpha()
+        if update_alpha:
+            self._alpha = self.update_alpha()
 
         clock_m_step = time.time() - clock_m_step
 
@@ -250,6 +251,8 @@ if __name__ == "__main__":
                            type=int, default=5, required=False)
     argparser.add_argument("--topics_out", help="Where we write topics",
                            type=str, default="topics.txt", required=False)
+    argparser.add_argument('--update_alpha', dest='feature', action='store_true',
+                           help="Update alpha (only available if you implement EC)")
 
     flags = argparser.parse_args()
 
@@ -258,6 +261,6 @@ if __name__ == "__main__":
             flags.num_topics, flags.alpha)
 
     for ii in xrange(flags.iterations):
-        vb.run_iteration(flags.inner_iter)
+        vb.run_iteration(flags.inner_iter, flags.update_alpha)
 
     vb.export_beta(flags.topics_out)
