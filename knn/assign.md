@@ -1,7 +1,7 @@
 K-Nearest Neighbors
 =
 
-Due: 4. September (23:55)
+Due: 8. September 2017 (23:55)
 
 Overview
 --------
@@ -24,7 +24,7 @@ already been implemented for you.  If you are implementing
 n-dimensional search or a median algorithm, you are generating extra
 work for yourself and making yourself vulnerable to errors.
 
-You'll turn in your code on Moodle.  This assignment is worth 15
+You'll turn in your code on ELMS.  This assignment is worth 15
 points.  Other assignments will be worth more.
 
 What you have to do
