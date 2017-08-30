@@ -18,7 +18,7 @@ for this assignment; logistic regression is implemented in scikit
 learn, but you should do everything by hand now.  You'll be able to
 use library implementations of logistic regression in the future (the next homework, even).
 
-You'll turn in your code on Moodle.  This assignment is worth 30
+You'll turn in your code on ELMS.  This assignment is worth 30
 points.
 
 What you have to do
