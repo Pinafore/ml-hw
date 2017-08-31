@@ -226,17 +226,17 @@ test3 = "algorithms"
 
 def printsizes(node):
     if node is None:
-        print "node is nil"
+        print("node is nil")
     else:
-        print "node", node.key, "has a subtree of size", node.size
+        print("node", node.key, "has a subtree of size", node.size)
 
 def test(args=None, BSTtype=BST):
     import random, sys
     if not args:
         args = sys.argv[1:]
     if not args:
-        print 'usage: %s <number-of-random-items | item item item ...>' % \
-              sys.argv[0]
+        print('usage: %s <number-of-random-items | item item item ...>' % \
+              sys.argv[0])
         sys.exit()
     elif len(args) == 1:
         items = (random.randrange(100) for i in xrange(int(args[0])))
@@ -244,11 +244,11 @@ def test(args=None, BSTtype=BST):
         items = [int(i) for i in args]
 
     tree = BSTtype()
-    print tree
+    print(tree)
     for item in items:
         tree.insert(item)
-        print
-        print tree
+        print()
+        print(tree)
 
     print("Range 25-75")
     print("\t%s" % " ".join(str(x.key) for x in tree.range(25, 75)))

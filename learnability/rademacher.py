@@ -202,7 +202,7 @@ def coin_tosses(number, random_seed=0):
     if random_seed != 0:
         seed(random_seed)
 
-    return [randint(0, 1) * 2 - 1 for x in xrange(number)]
+    return [randint(0, 1) * 2 - 1 for x in range(number)]
 
 
 def rademacher_estimate(dataset, hypothesis_generator, num_samples=500,
@@ -221,7 +221,7 @@ def rademacher_estimate(dataset, hypothesis_generator, num_samples=500,
       correlation
     """
 
-    for ii in xrange(num_samples):
+    for ii in range(num_samples):
         if random_seed != 0:
             rademacher = coin_tosses(len(dataset), random_seed + ii)
         else:

@@ -55,7 +55,7 @@ def train_sin_classifier(data):
       data: A list of tuples; first coordinate is x (integers), second is y (+1/-1)
     """
 
-    assert all(isinstance(x[0], int) and x >= 0 for x in data), \
+    assert all(isinstance(x[0], int) and x[0] >= 0 for x in data), \
         "All training points must be integers"
     assert all(isinstance(x[1], bool) for x in data), \
         "All labels must be True / False"

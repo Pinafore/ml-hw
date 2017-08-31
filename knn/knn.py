@@ -19,7 +19,7 @@ class Numbers:
 
         # Load the dataset
         f = gzip.open(location, 'rb')
-        train_set, valid_set, test_set = pickle.load(f, encoding='latin1') 
+        train_set, valid_set, test_set = pickle.load(f) 
 
         self.train_x, self.train_y = train_set
         self.test_x, self.test_y = valid_set
