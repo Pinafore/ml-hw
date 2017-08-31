@@ -163,7 +163,7 @@ if __name__ == "__main__":
 
     # Iterations
     update_number = 0
-    for pp in xrange(args.passes):
+    for pp in range(args.passes):
         for ii in train:
             update_number += 1
             lr.sg_update(ii, update_number)

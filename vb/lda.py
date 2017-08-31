@@ -54,7 +54,7 @@ def parse_data(corpus, vocab):
 
         doc_count += 1
         if doc_count % 10000 == 0:
-            print "successfully import %d documents..." % doc_count
+            print("successfully import %d documents..." % doc_count)
 
     print("Successfully imported %i documents with %i tokens." %
           (doc_count, token_count))
@@ -127,7 +127,7 @@ class VariationalBayes:
             (self._alpha + float(self._num_types) / float(self._num_topics))
 
         # iterate over all documents
-        #for doc_id in xrange(number_of_documents):
+        #for doc_id in range(number_of_documents):
         for doc_id in numpy.random.permutation(number_of_documents):
             # compute the total number of words
             term_ids = word_ids[doc_id]
@@ -139,7 +139,7 @@ class VariationalBayes:
                                   / float(self._num_topics))
 
             # update phi and gamma until gamma converges
-            for gamma_iteration in xrange(local_parameter_iteration):
+            for gamma_iteration in range(local_parameter_iteration):
                 gamma_update = ones(self._num_topics)
                 gamma_update.fill(self._alpha)
 
@@ -155,8 +155,7 @@ class VariationalBayes:
                 gamma[doc_id, :] = gamma_update
 
             if (doc_id + 1) % 1000 == 0:
-                print "Global iteration %i, doc %i" % \
-                    (self._iteration, doc_id + 1)
+                print("Global iteration %i, doc %i" % (self._iteration, doc_id + 1))
 
         self._gamma = gamma
         return topic_counts
@@ -208,8 +207,8 @@ class VariationalBayes:
 
         clock_m_step = time.time() - clock_m_step
 
-        print "Iteration %i\te_step %d sec, mstep %d sec" % \
-            (self._iteration, clock_e_step, clock_m_step)
+        print("Iteration %i\te_step %d sec, mstep %d sec" % \
+                (self._iteration, clock_e_step, clock_m_step))
 
     def export_beta(self, exp_beta_path, top_display=10):
         """
@@ -218,7 +217,7 @@ class VariationalBayes:
 
         output = open(exp_beta_path, 'w')
 
-        for topic_index in xrange(self._num_topics):
+        for topic_index in range(self._num_topics):
             output.write("==========\t%d\t==========\n" % (topic_index))
 
             beta_probability = self._beta[topic_index, ]
@@ -260,7 +259,7 @@ if __name__ == "__main__":
     vb.init(open(flags.documents), open(flags.vocab),
             flags.num_topics, flags.alpha)
 
-    for ii in xrange(flags.iterations):
+    for ii in range(flags.iterations):
         vb.run_iteration(flags.inner_iter, flags.update_alpha)
 
     vb.export_beta(flags.topics_out)
