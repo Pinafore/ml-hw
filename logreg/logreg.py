@@ -107,6 +107,9 @@ class LogReg:
 
 
 
+
+
+
         # if debug:
         #     print("X")
         #     print(train_example.x)
@@ -213,3 +216,5 @@ if __name__ == "__main__":
 
     # Final update with empty example
     lr.finalize_lazy(update_number)
+    print("Update %i\tTP %f\tHP %f\tTA %f\tHA %f" %
+          (update_number, train_lp, ho_lp, train_acc, ho_acc))
