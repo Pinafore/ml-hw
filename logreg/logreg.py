@@ -37,7 +37,7 @@ class Example:
         :param words: The words in a list of "word:count" format
         :param vocab: The vocabulary to use as features (list)
         """
-        self.nonzero = {}
+        self.nonzero = {vocab.index(kBIAS): 1}
         self.y = label
         self.x = zeros(len(vocab))
         for word, count in [x.split(":") for x in words]:
@@ -57,11 +57,12 @@ class LogReg:
         :param mu: Regularization parameter
         :param step: A function that takes the iteration as an argument (the default is a constant value)
         """
-        
+
+        self.dimension = num_features
         self.beta = zeros(num_features)
         self.mu = mu
         self.step = step
-        self.last_update = defaultdict(int)
+        self.last_update = zeros(num_features)
 
         assert self.mu >= 0, "Regularization parameter must be non-negative"
 
@@ -82,26 +83,57 @@ class LogReg:
             else:
                 logprob += log(1.0 - p)
 
+            if self.mu > 0:
+                logprob -= mu * np.sum(self.beta ** 2)
+
             # Get accuracy
             if abs(ii.y - p) < 0.5:
                 num_right += 1
 
         return logprob, float(num_right) / float(len(examples))
 
-    def sg_update(self, train_example, iteration, use_tfidf=False):
+    def sg_update(self, train_example, iteration,
+                  use_tfidf=False):
         """
         Compute a stochastic gradient update to improve the log likelihood.
 
         :param train_example: The example to take the gradient with respect to
         :param iteration: The current iteration (an integer)
         :param use_tfidf: A boolean to switch between the raw data and the tfidf representation
+
         :return: Return the new value of the regression coefficients
         """
 
-        # TODO: Implement updates in this function
+
+
+
+        # if debug:
+        #     print("X")
+        #     print(train_example.x)
+
+        #     print("Delta")
+        #     print(delta)
+
+        #     print("Beta")
+        #     print(self.beta)
 
         return self.beta
 
+    def finalize_lazy(self, iteration):
+        """
+        After going through all normal updates, apply regularization to
+        all variables that need it.
+
+        This will need to be modified for lazy update with variable
+        step size extra credit.
+        """
+
+        if self.mu > 0:
+            from numpy import ones
+            shrinkage = ones(self.dimension)
+            shrinkage *= (1 - 2 * self.mu * self.step(iteration))
+            self.beta *= shrinkage ** (iteration - self.last_update)
+        return self.beta
 
 def read_dataset(positive, negative, vocab, test_proportion=.1):
     """
@@ -133,11 +165,6 @@ def read_dataset(positive, negative, vocab, test_proportion=.1):
 
     return train, test, vocab
 
-def step_update(iteration):
-    # TODO (extra credit): Update this function to provide an
-    # effective iteration dependent step size
-    return 1.0
-
 if __name__ == "__main__":
     argparser = argparse.ArgumentParser()
     argparser.add_argument("--mu", help="Weight of L2 regression",
@@ -152,6 +179,8 @@ if __name__ == "__main__":
                            type=str, default="../data/hockey_baseball/vocab", required=False)
     argparser.add_argument("--passes", help="Number of passes through train",
                            type=int, default=1, required=False)
+    argparser.add_argument("--ec", help="Extra credit option (df or rate)",
+                           type=str, default="")
 
     args = argparser.parse_args()
     train, test, vocab = read_dataset(args.positive, args.negative, args.vocab)
@@ -159,17 +188,28 @@ if __name__ == "__main__":
     print("Read in %i train and %i test" % (len(train), len(test)))
 
     # Initialize model
-    lr = LogReg(len(vocab), args.mu, lambda x: args.step)
+    if args.ec != "rate":
+        lr = LogReg(len(vocab), args.mu, lambda x: args.step)
+    else:
+        # Modify this code if you do learning rate extra credit
+        raise NotImplementedError
 
     # Iterations
     update_number = 0
     for pp in range(args.passes):
         for ii in train:
             update_number += 1
-            lr.sg_update(ii, update_number)
+            # Do we use extra credit option
+            if args.ec == "df":
+                lr.sg_update(ii, update_number, use_tfidf=True)
+            else:
+                lr.sg_update(ii, update_number, use_tfidf=False)
 
             if update_number % 5 == 1:
                 train_lp, train_acc = lr.progress(train)
                 ho_lp, ho_acc = lr.progress(test)
                 print("Update %i\tTP %f\tHP %f\tTA %f\tHA %f" %
                       (update_number, train_lp, ho_lp, train_acc, ho_acc))
+
+    # Final update with empty example
+    lr.finalize_lazy(update_number)
