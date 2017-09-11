@@ -48,7 +48,7 @@ Extra credit:
     - Show the effect in your analysis document
 1.  Use document frequency (provided in the vocabulary file) to modify the feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
     - Modify the Example to store the df vector
-    - With the appropriate flag, use the ~df~ vector rather than ~x~ in the update
+    - With the appropriate flag, use the *df* vector rather than *x* in the update
     - Show the effect in your analysis document
 
 Caution: When implementing extra credit, make sure your implementation of the
