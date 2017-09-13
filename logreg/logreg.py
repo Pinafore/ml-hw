@@ -93,7 +93,7 @@ class LogReg:
         return logprob, float(num_right) / float(len(examples))
 
     def sg_update(self, train_example, iteration,
-                  use_tfidf=False):
+                  lazy=False, use_tfidf=False):
         """
         Compute a stochastic gradient update to improve the log likelihood.
 
@@ -104,6 +104,7 @@ class LogReg:
         :return: Return the new value of the regression coefficients
         """
 
+        elif self.mu > 0:
 
 
 
@@ -127,16 +128,9 @@ class LogReg:
         After going through all normal updates, apply regularization to
         all variables that need it.
 
-        This will need to be modified for lazy update with variable
-        step size extra credit.
+        Only implement this function if you do the extra credit.
         """
 
-        if self.mu > 0:
-            from numpy import ones
-            shrinkage = ones(self.dimension)
-            shrinkage *= (1 - 2 * self.mu * self.step(iteration))
-            self.beta *= shrinkage ** (iteration - self.last_update)
-        return self.beta
 
 def read_dataset(positive, negative, vocab, test_proportion=.1):
     """
@@ -182,7 +176,7 @@ if __name__ == "__main__":
                            type=str, default="../data/hockey_baseball/vocab", required=False)
     argparser.add_argument("--passes", help="Number of passes through train",
                            type=int, default=1, required=False)
-    argparser.add_argument("--ec", help="Extra credit option (df or rate)",
+    argparser.add_argument("--ec", help="Extra credit option (df, lazy, or rate)",
                            type=str, default="")
 
     args = argparser.parse_args()
@@ -205,8 +199,10 @@ if __name__ == "__main__":
             # Do we use extra credit option
             if args.ec == "df":
                 lr.sg_update(ii, update_number, use_tfidf=True)
+            elif args.ec == "lazy":
+                lr.sg_update(ii, update_number, lazy=True)
             else:
-                lr.sg_update(ii, update_number, use_tfidf=False)
+                lr.sg_update(ii, update_number)
 
             if update_number % 5 == 1:
                 train_lp, train_acc = lr.progress(train)

@@ -26,7 +26,7 @@ class TestKnn(unittest.TestCase):
         print(kNEG.x)
         beta = self.logreg_reg.sg_update(kNEG, 2)
         self.assertAlmostEqual(beta[0], -0.72068776924864364)
-        self.assertAlmostEqual(beta[1], 2.0)
+        self.assertAlmostEqual(beta[1], 1.0)
         self.assertAlmostEqual(beta[2], -0.22068776924864364)
         self.assertAlmostEqual(beta[3], -2.6620633077459308)
         self.assertAlmostEqual(beta[4], -3.8827510769945746)
