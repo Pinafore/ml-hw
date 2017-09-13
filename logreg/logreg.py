@@ -131,6 +131,7 @@ class LogReg:
         Only implement this function if you do the extra credit.
         """
 
+        return self.beta
 
 def read_dataset(positive, negative, vocab, test_proportion=.1):
     """
