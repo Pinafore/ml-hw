@@ -1,5 +1,6 @@
 import random
-from numpy import zeros, sign
+import numpy
+from numpy import zeros, sign, sum
 from math import exp, log
 from collections import defaultdict
 
@@ -84,7 +85,7 @@ class LogReg:
                 logprob += log(1.0 - p)
 
             if self.mu > 0:
-                logprob -= mu * np.sum(self.beta ** 2)
+                logprob -= self.mu * numpy.sum(self.beta ** 2)
 
             # Get accuracy
             if abs(ii.y - p) < 0.5:
