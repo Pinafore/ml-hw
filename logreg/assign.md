@@ -13,10 +13,12 @@ whether documents are talking about hockey or baseball.
 ![Hockey and Baseball: Are they really that different?](baseball_hockey.jpg "Two sports I know nothing about")
 
 This will be slightly more difficult than the last homework (the
-difficulty will slowly ramp upward).  You should not use any libraries that implement any of the functionality of logistic regression
-for this assignment; logistic regression is implemented in scikit
-learn, but you should do everything by hand now.  You'll be able to
-use library implementations of logistic regression in the future (the next homework, even).
+difficulty will slowly ramp upward).  You should not use any libraries
+that implement any of the functionality of logistic regression for
+this assignment; logistic regression is implemented in scikit learn,
+but you should do everything by hand now.  You'll be able to use
+library implementations of logistic regression in the future (the next
+homework, even).
 
 You'll turn in your code on ELMS.  This assignment is worth 30
 points.
@@ -46,10 +48,11 @@ Extra credit:
     - Supply an appropriate argument to step parameter
     - Support it in your _sg update_
     - Show the effect in your analysis document
-1.  Use document frequency (provided in the vocabulary file) to modify the feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
+2.  Use document frequency (provided in the vocabulary file) to modify the feature values to [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf).
     - Modify the Example to store the df vector
     - With the appropriate flag, use the ~df~ vector rather than ~x~ in the update
     - Show the effect in your analysis document
+3.  Implement lazy updating
 
 Caution: When implementing extra credit, make sure your implementation of the
 regular algorithms doesn't change.
