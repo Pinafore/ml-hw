@@ -1,6 +1,6 @@
 import random
 import numpy
-from numpy import zeros, sign, sum
+from numpy import zeros, sign
 from math import exp, log
 from collections import defaultdict
 
