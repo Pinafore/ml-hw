@@ -57,19 +57,18 @@ movie and see what’s hidden).
 Submission
 -----------
 
-In addition to turning in your code on Moodle, you'll also need to submit your
+In addition to turning in your code on ELMS, you'll also need to submit your
 predictions on Kaggle, an online tournament site for machine learning
-competitions.  You must sign up with your Colorado e-mail (it's a restricted
-entry competition).
+competitions.
 
-https://inclass.kaggle.com/c/spoiler-detection
+https://inclass.kaggle.com/c/spoiler-detection2
 
 In addition:
 * please turn in a file called _explanation.pdf_ explaining your process of
   creating additional features.  Make sure you state your username there.  This should only be one page of text, but it is okay if graphs spill onto a second page.
 * upload your feature extraction code that produced your predictions
 
-Your username should be of the form _CU\_IDENTIKEY_
+Your username should include your real name (as it appears in ELMS)
 that we can easily map it to your grade.
 
 The sample code produces a two column CSV file that is correctly formatted for Kaggle (predictions.csv).  It should have the id as the first column and the prediction as the second column.
@@ -83,7 +82,7 @@ evaluated on accuracy on a held-out test set.
 
 You should be able to significantly
 improve on the baseline system (as reported by the Kaggle system).  If you can
-do much better than your peers, you can earn extra credit (up to 15 points).
+do much better than your peers, you can earn extra credit (up to 10 points).
 Your writeup explanation is worth 20 points.
 
 Unlike previous homeworks, the writeup is worth relatively more of
@@ -94,7 +93,7 @@ requirements of the writeup.
 Questions / Hints
 ----------------
 
-* Don't use all the data until you're ready.  You may want to add a \texttt{--limit}
+* Don't use all the data until you're ready.  You may want to add a *--limit*
   option (as was provided in the KNN homework) to use a subset of the data to see how you're doing on smaller
   datasets.
 * Examine the features that are being used.
@@ -105,7 +104,7 @@ Questions / Hints
 
     Can I look at TV Tropes?
 
-In order to gain insight about the data yes, however, your feature extraction must be fully automatic and cannot use any data (beyond what I've given you) from the TV Tropes webpage.
+In order to gain insight about the data, you can and should probably look at TV Tropes to understand what's going on. However, your feature extraction must be fully automatic and cannot use any data (beyond what I've given you) from the TV Tropes webpage.
 
     Can I use IMDB, Wikipedia, or a dictionary?
 
@@ -122,3 +121,7 @@ That is not fully automatic, so no. You should be able to run your feature extra
     What sort of improvement is “good” or “enough”?
 
 If you have 5-10% improvement over the baseline with your features, that’s more than sufficient.  If you fail to get that improvement but have tried reasonable features, that satisfies the requirements of assignment.  However, the extra credit for “winning” the class competition depends on the performance of other students.
+
+    Can I use deep learning to build a classifier and then use the output of that as a feature?
+
+In theory, you could, as that's fully automatic, but I'd prefer that you do something other than using deep learning to answer this specific question.  If you use an automatic algorithm that uses dep learning to parse the sentence, extract POS tags, or something like that, that is totally fine.
