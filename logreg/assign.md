@@ -33,7 +33,6 @@ Coding (25 points):
 3. You'll likely need to write some code to get the best/worst features (see below).
 3. Modify the _sg update_ function to perform non-regularized updates.
 4. Modify the _sg update_ function so that it finds regularized updates.
-    *NOTE*: You should only update [non-zero dimensions](http://lingpipe.files.wordpress.com/2008/04/lazysgdregression.pdf).
 
 Analysis (5 points):
 
