@@ -19,24 +19,16 @@ us to make sure you clearly convey why it's an interesting problem.
 Groups
 ==================
 
-You must form a group of 3-5 students enrolled in this course.  If you have a project idea and you're not able to convince two other people to work on it, it's probably not that interesting.  You should instead join another group.  
-
-Undergrads
-==================
-
-If you're in the undergrad section of the course, you have two choices:
-
-* Elect before the midterm to use the graduate grading scheme (i.e., only midterm and project).  If you take the final, it replaces the midterm.  You must do the project no matter what, and the final exam is optional.
-* If after the midterm you think that you want to do a project, you can either join an existing group (organize via Piazza) or create a new group.  If you create a new group, schedule a meeting with me.
+You must form a group of 4-5 students enrolled in this course.  If you have a project idea and you're not able to convince two other people to work on it, it's probably not that interesting.  You should instead join another group.  
 
 Meeting with Professor
 ==================
-Sometime during the week of 9. October, you'll meet with the professor to discuss your project and to get feedback on your initial ideas.
+Sometime during the week of 11. October 2017, you'll meet with the professor to discuss your project and to get feedback on your initial ideas.
 
 Proposal
 ==================
 
-The project proposal is due 30. October.  This one page PDF document
+The project proposal is due 20. October.  This one page PDF document
 should describe:
 
 * What project you're working on.  If you're not doing the shared competition, you must describe the task, data, and baselines clearly.
@@ -46,11 +38,19 @@ should describe:
 * What techniques you will explore 
 
 * Your timeline for completing the project (be realistic; you should
-  have your first results by 13. November)
+  have your first results by 10. November 2017)
 
 Have the person in your group whose name is alphabetically first
 submit your assignment on Piazza.  Late days cannot be used on this
 assignment.
+
+First Deliverable
+======================
+
+Your first deliverable is due 10. Nov 2017.  This is a one page writeup detailing what you've done thus far.  It should prove that your project idea is sound and that you've made progress.  Good indications of this are:
+* You have your data
+* You've implemented baseline techniques that work
+* You've made some progress on the overall goal of your project
 
 Final Presentation
 ======================
