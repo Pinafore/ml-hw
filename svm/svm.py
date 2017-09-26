@@ -18,7 +18,6 @@ kSEP = array([(-2, 2, +1),    # 0 - A
               (2, -3, -1),    # 5 - F
               ])
 
-
 def weight_vector(x, y, alpha):
     """
     Given a vector of alphas, compute the primal weight vector.

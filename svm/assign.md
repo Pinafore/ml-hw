@@ -1,7 +1,7 @@
 Support Vector Machines
 =
 
-Due: 9. October
+Due: 13. October 2017
 
 Overview
 --------
@@ -37,9 +37,10 @@ What to turn in
 Unit Tests
 =
 
-I've provided unit tests based on the example that we worked through in class.
-Make sure it passes all of the unit tests.  However, these tests are not exhaustive; passing the tests will not
-guarantee a good grade, you should verify yourself that your code is robust and
+I've provided unit tests based on the example that we worked through
+in class.  Make sure it passes all of the unit tests.  However, these
+tests are not exhaustive; passing the tests will not guarantee a good
+grade, you should verify yourself that your code is robust and
 correct.
 
 
