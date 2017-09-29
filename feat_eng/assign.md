@@ -1,7 +1,7 @@
 Feature Engineering
 =
 
-Due: 18. September
+Due: 29. September 2017
 
 The aim of this assignment is to do text classification on social media,
 sorting them into different classes.  We'll be using the logistic regression
