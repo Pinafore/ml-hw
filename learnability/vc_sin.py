@@ -39,6 +39,7 @@ class SinClassifier:
           x: The data point (an integer)
         """
         assert isinstance(x, int), "Object to be classified must be an integer"
+        assert x > 0, "Can only classify natural numbers"
 
         if self(x) >= 0:
             return True
