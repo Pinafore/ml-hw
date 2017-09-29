@@ -20,7 +20,7 @@ def assign_exists(data, classifiers, pattern):
         (str(data), str(pattern))
     for hh in classifiers:
         present = all(hh.classify(data[x]) == pattern[x] for
-                      x in xrange(len(data)))
+                      x in range(len(data)))
         # Uncomment for additional debugging code
         # if present:
         #    print("%s matches %s" % (str(hh), str(pattern)))
