@@ -20,6 +20,12 @@ In the image above we show the distinct hypotheses for the same set of four poin
 
 *VC Dimension of a SIN Classifier*: This requires some thought but should be very simple to implement.  Given a training set of integers, you'll need to perfectly classify the training set with a single parameter sin classifier.
 
+Given an input *x*, the classifier returns true if and only if the following function is greater than or equal to zero.
+```
+sin(self._frequency * 2 ** (-x))
+```
+You will need to provide a frequency within the *train_sin_classifier* to correctly classify points based on training data.
+
 Implementation (25 points)
 -
 
