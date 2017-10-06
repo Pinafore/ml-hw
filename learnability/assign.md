@@ -82,4 +82,4 @@ Hints
 2.  The classifiers return boolean classifications, but the correlation function needs +/-1 results
 1.  You may want to use trigonometric functions for the hyperplane function
 1.  Do not make your code too slow; you will not get full credits if your code
-    does not complete in reasonable time
+    does not complete in reasonable time.  Your code should be able to handle 100 arbitrary points within minutes.  You should also find situations that can make your code more efficient (e.g., your program should provide answers on colinear points much more quickly than arbitrary points) 
