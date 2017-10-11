@@ -16,9 +16,15 @@ The two hypothesis classes you'll look at are hyperplanes that pass through the 
 
 ![Distinct Hypotheses for Two Hypothesis Classes](hypotheses.png "Distinct Hypotheses")
 
-In the image above we show the distinct hypotheses for the same set of four points in 2D space (this is the last set of tests in the unit tests).  There are fourteen hypotheses for axis aligned rectangles but only six for the planes (each line can set the positive class to be to the left or to the right).  You'll need to generate all of the possible hypotheses.
+In the image above we show the distinct hypotheses for the same set of four points in 2D space (this is the last set of tests in the unit tests).  There are fourteen hypotheses for axis aligned rectangles (not drawn above: all negative and all positive) but only six for the planes (each line can set the positive class to be to the left or to the right).  You'll need to generate all of the possible hypotheses.
 
 *VC Dimension of a SIN Classifier*: This requires some thought but should be very simple to implement.  Given a training set of integers, you'll need to perfectly classify the training set with a single parameter sin classifier.
+
+Given an input *x*, the classifier returns true if and only if the following function is greater than or equal to zero.
+```
+sin(self._frequency * 2 ** (-x))
+```
+You will need to provide a frequency within the *train_sin_classifier* to correctly classify points based on training data.
 
 Implementation (25 points)
 -
@@ -76,4 +82,4 @@ Hints
 2.  The classifiers return boolean classifications, but the correlation function needs +/-1 results
 1.  You may want to use trigonometric functions for the hyperplane function
 1.  Do not make your code too slow; you will not get full credits if your code
-    does not complete in reasonable time
+    does not complete in reasonable time.  Your code should be able to handle 100 arbitrary points within minutes.  You should also find situations that can make your code more efficient (e.g., your program should provide answers on colinear points much more quickly than arbitrary points) 
