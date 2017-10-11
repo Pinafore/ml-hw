@@ -1,7 +1,7 @@
 Support Vector Machines
 =
 
-Due: 9. October
+Due: 13. October
 
 Overview
 --------
@@ -9,7 +9,7 @@ Overview
 In this homework you'll explore the primal and dual representations of support
 vector machines.
 
-You'll turn in your code on Moodle.  This assignment is worth 25
+You'll turn in your code on ELMS.  This assignment is worth 25
 points.
 
 What you have to do
