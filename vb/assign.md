@@ -1,7 +1,7 @@
 Variational Inference for Topic Models
 =
 
-Due: 4. December
+Due: 17. Nov 2017
 
 Overview
 --------
@@ -9,7 +9,7 @@ Overview
 In this homework you'll explore the implementation of various variational parameter updates for
 Latent Dirichlet Allocation.
 
-You'll turn in your code on Moodle.  This assignment is worth 30
+You'll turn in your code on ELMS.  This assignment is worth 30
 points.
 
 What you have to do

@@ -52,6 +52,8 @@ Your first deliverable is due 10. Nov 2017.  This is a one page writeup detailin
 * You've implemented baseline techniques that work
 * You've made some progress on the overall goal of your project
 
+Post your first deliverable report publicly on Piazza.
+
 Final Presentation
 ======================
 
