@@ -49,8 +49,8 @@ def parse_data(corpus, vocab):
             else:
                 continue
 
-        word_ids.append(numpy.array(document_word_dict.keys()))
-        word_cts.append(numpy.array(document_word_dict.values()))
+        word_ids.append(numpy.array(list(document_word_dict.keys())))
+        word_cts.append(numpy.array(list(document_word_dict.values())))
 
         doc_count += 1
         if doc_count % 10000 == 0:
