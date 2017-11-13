@@ -30,6 +30,7 @@ Analysis:
 Extra Credit:
 
 1. Implement the *update alpha* function 
+2. Use cross-validation on the test set to select the alpha that provides the best ELBO.  Does this give the same result as updating ELBO on the training set?
 
 What to turn in
 -
