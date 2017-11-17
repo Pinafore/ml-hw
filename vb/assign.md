@@ -36,7 +36,8 @@ What to turn in
 -
 
 1.  Submit your _lda.py_ file
-1.  Submit your _topics.txt_ file
+2.  Submit your _topics.txt_ file
+3.  Submit your _analysis.pdf_ file for extra credit. 
 
 Unit Tests
 =
