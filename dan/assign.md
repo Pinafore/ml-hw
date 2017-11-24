@@ -14,7 +14,7 @@ multiply it by a matrix, and then create a hidden layer.  If it was a
 good idea to do it once, we do it again.  The number of times we do it
 is called the depth of the network.
 
-![DAN schematic][dan.png]
+![DAN schematic](dan.png DAN schematic)
 
 AdaGrad
 ==============
