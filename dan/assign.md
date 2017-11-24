@@ -13,7 +13,7 @@ introduce some of the core concepts of using deep learning in
 practice.
 
 What's a DAN?
-==============
+----------------
 
 A deep averaging network was designed for text documents.  Each word
 has a vector represenation.  We average this vector representation,
@@ -33,7 +33,7 @@ models in the [original
 paper](https://cs.umd.edu/~miyyer/pubs/2015_acl_dan.pdf).
 
 What you have to do
-==============
+----------------
 
 The assignment is relatively simple: you need to compute the
 activations this network.  You don't need to derive the gradients, but
@@ -45,7 +45,7 @@ DeepAveragingNetwork class.  There are unit tests as usual to make sure you're
 on the right track.
 
 Extra Credit
-=============
+----------------=
 
 For extra credit, initialize the word representations with word2vec,
 GloVe, or some other representation.  Compare the final performance
@@ -53,12 +53,12 @@ based on these initializations *and* see how the word representations
 change.
 
 Writeup
-============
+----------------
 
 No writeup in necessary unless you implement the extra credit.
 
 AdaGrad
-==============
+----------------
 
 When you're doing gradient descent, some dimensions are more important
 than others.  We won't be doing vanilla SGD; instead, we'll focus on
@@ -67,7 +67,7 @@ this.  You will not need to implement this, but we have provided a
 class that rescales the dimensions as you do your updates.
 
 Autodifferentiation and GPUs
-==============
+----------------
 
 I'm well aware that all of the cool kids are doing deep learning on
 GPUs and with deep learning toolkits.  However, using toolkits makes
