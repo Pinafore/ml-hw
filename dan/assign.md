@@ -10,11 +10,29 @@ What's a DAN?
 
 A deep averaging network was designed for text documents.  Each word
 has a vector represenation.  We average this vector representation,
-multiply it by a matrix, and then create a hidden layer.  If it was a
-good idea to do it once, we do it again.  The number of times we do it
-is called the depth of the network.
+multiply it by a matrix, pass it through a nonlinearity (ReLU) and
+then create a hidden layer.  If it was a good idea to do it once, we
+do it again.  The number of times we do it is called the depth of the
+network.
 
 ![DAN schematic](dan.png "DAN schematic")
+
+Finally, we have a final hidden layer.  We're going to use a softmax
+function (no Gumbel parameter) to create the final multiclass
+prediction for the network.
+
+You can read more about the background and comparison with other
+models in the [original
+paper](https://cs.umd.edu/~miyyer/pubs/2015_acl_dan.pdf).
+
+What you have to do
+==============
+
+The assignment is relatively simple: you need to compute the
+activations and error for this network.  You don't need to derive the
+gradients, but it would be good practice for you to do so.
+
+
 
 AdaGrad
 ==============
