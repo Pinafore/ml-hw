@@ -1,4 +1,4 @@
-Variational Inference for Topic Models
+Deep Learning with Deep Averaging Networks
 =
 
 Due: 17. Nov 2017
