@@ -1,3 +1,10 @@
+Variational Inference for Topic Models
+=
+
+Due: 17. Nov 2017
+
+Overview
+--------
 
 For gaining a better understanding of deep learning, we're going to be
 looking at deep averaging networks.  These are a very simple
@@ -29,10 +36,26 @@ What you have to do
 ==============
 
 The assignment is relatively simple: you need to compute the
-activations and error for this network.  You don't need to derive the
-gradients, but it would be good practice for you to do so.
+activations this network.  You don't need to derive the gradients, but
+it would be good practice for you to do so.
 
+For computing the activations, you'll need to access the parameters.
+These can be gotten through the methods *get_w* and *get_b* inside the
+DeepAveragingNetwork class.  There are unit tests as usual to make sure you're
+on the right track.
 
+Extra Credit
+=============
+
+For extra credit, initialize the word representations with word2vec,
+GloVe, or some other representation.  Compare the final performance
+based on these initializations *and* see how the word representations
+change.
+
+Writeup
+============
+
+No writeup in necessary unless you implement the extra credit.
 
 AdaGrad
 ==============
