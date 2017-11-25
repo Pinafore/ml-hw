@@ -1,7 +1,7 @@
 Deep Learning with Deep Averaging Networks
 =
 
-Due: 17. Nov 2017
+Due: 8. Dec 2017
 
 Overview
 --------
