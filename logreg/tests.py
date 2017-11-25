@@ -1,64 +1,31 @@
+
+from dan import DeepAveragingNetwork, roll_params
+from numpy import array
+
 import unittest
 
-from logreg import LogReg, Example
-from numpy import zeros
-
-kTOY_VOCAB = "BIAS_CONSTANT A B C D".split()
-kPOS = Example(1, "A:4 B:3 C:1".split(), kTOY_VOCAB, None)
-kNEG = Example(0, "B:1 C:3 D:4".split(), kTOY_VOCAB, None)
-
-class TestKnn(unittest.TestCase):
+class TestDan(unittest.TestCase):
     def setUp(self):
-        self.logreg_unreg = LogReg(5, 0.0, lambda x: 1.0)
-        self.logreg_reg = LogReg(5, 0.25, lambda x: 1.0)
+        self.dan = DeepAveragingNetwork(2, 2, 4, 2, 2, .5)
+        params = self.dan._params
+        # params.append(array([[ 8,  2,  -3,  4 ],
+        #                      [-5,  8,  -3, -9]]))
+        # params.append(array([5, -7]))        
+        # params.append(array([[ 1, -1],
+        #                      [ 0,  2]]))
+        # params.append(array([1, -2]))
+        # params.append(array([[ -2, 1],
+        #                      [  1, 3]]))
+        # params.append(array([ .5, -.5]))
+        # params.append(array([[  1, 4],
+        #                      [  2, -8]]))
+        
+        self.dan._params = params
+        
+    def test_activation(self):
+        activiation = self.dan.activations([0, 1])
 
-    def test_reg(self):
-        print(self.logreg_reg.beta)
-        print(kPOS.x)
-        beta = self.logreg_reg.sg_update(kPOS, 1)
-        self.assertAlmostEqual(beta[0], .5)
-        self.assertAlmostEqual(beta[1], 2.0)
-        self.assertAlmostEqual(beta[2], 1.5)
-        self.assertAlmostEqual(beta[3], 0.5)
-        self.assertAlmostEqual(beta[4], 0.0)
-
-        print(self.logreg_reg.beta)
-        print(kNEG.x)
-        beta = self.logreg_reg.sg_update(kNEG, 2)
-        self.assertAlmostEqual(beta[0], -0.72068776924864364)
-        self.assertAlmostEqual(beta[1], 1.0)
-        self.assertAlmostEqual(beta[2], -0.22068776924864364)
-        self.assertAlmostEqual(beta[3], -2.6620633077459308)
-        self.assertAlmostEqual(beta[4], -3.8827510769945746)
-
-        print("Finalize")
-        print(self.logreg_reg.last_update)
-        beta = self.logreg_reg.finalize_lazy(2)
-        self.assertAlmostEqual(beta[0], -0.72068776924864364)
-        self.assertAlmostEqual(beta[1], 1.0)
-        self.assertAlmostEqual(beta[2], -0.22068776924864364)
-        self.assertAlmostEqual(beta[3], -2.6620633077459308)
-        self.assertAlmostEqual(beta[4], -3.8827510769945746)
-
-
-    def test_unreg(self):
-        print(self.logreg_unreg.beta)
-        print(kPOS.x)
-        beta = self.logreg_unreg.sg_update(kPOS, 1)
-        self.assertAlmostEqual(beta[0], .5)
-        self.assertAlmostEqual(beta[1], 2.0)
-        self.assertAlmostEqual(beta[2], 1.5)
-        self.assertAlmostEqual(beta[3], 0.5)
-        self.assertAlmostEqual(beta[4], 0.0)
-
-        print(self.logreg_unreg.beta)
-        print(kPOS.x)
-        beta = self.logreg_unreg.sg_update(kNEG, 2)
-        self.assertAlmostEqual(beta[0], -0.47068776924864364)
-        self.assertAlmostEqual(beta[1], 2.0)
-        self.assertAlmostEqual(beta[2], 0.5293122307513564)
-        self.assertAlmostEqual(beta[3], -2.4120633077459308)
-        self.assertAlmostEqual(beta[4], -3.8827510769945746)
+        self.assertAlmostEqual(activation[0], .2)
 
 if __name__ == '__main__':
     unittest.main()

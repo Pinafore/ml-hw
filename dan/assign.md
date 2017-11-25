@@ -36,13 +36,15 @@ What you have to do
 ----------------
 
 The assignment is relatively simple: you need to compute the
-activations this network.  You don't need to derive the gradients, but
-it would be good practice for you to do so.
+activations this network and the gradients for backpropagation.
 
 For computing the activations, you'll need to access the parameters.
 These can be gotten through the methods *get_w* and *get_b* inside the
 DeepAveragingNetwork class.  There are unit tests as usual to make sure you're
 on the right track.
+
+For computing the gradients, you need to compute the derivative with
+respect to each parameter of the network.
 
 Extra Credit
 ----------------=
