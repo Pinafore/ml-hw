@@ -47,7 +47,7 @@ For computing the gradients, you need to compute the derivative with
 respect to each parameter of the network.
 
 Extra Credit
-----------------=
+----------------
 
 For extra credit, initialize the word representations with word2vec,
 GloVe, or some other representation.  Compare the final performance
