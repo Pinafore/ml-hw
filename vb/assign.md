@@ -30,12 +30,14 @@ Analysis:
 Extra Credit:
 
 1. Implement the *update alpha* function 
+2. Use cross-validation (generate topics on the training set, compute ELBO on the test set) to select the alpha that provides the best ELBO.  Does this give the same result as updating alpha via ELBO on the training set?
 
 What to turn in
 -
 
 1.  Submit your _lda.py_ file
-1.  Submit your _topics.txt_ file
+2.  Submit your _topics.txt_ file
+3.  Submit your _analysis.pdf_ file for extra credit. 
 
 Unit Tests
 =
