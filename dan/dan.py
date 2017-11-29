@@ -125,7 +125,7 @@ class DeepAveragingNetwork:
         params.append((random.rand(self._num_labels, ) * 2 - 1) * kINIT_WIDTH)
 
         print('randomly initializing word embeddings...')
-        orig_We = (random.rand(self._hidden_dimension, self._vocab_size) * 2 - 1) * kINIT_WIDTH
+        orig_We = (random.rand(self._word_dimension, self._vocab_size) * 2 - 1) * kINIT_WIDTH
 
         # add We matrix to params
         params += (orig_We, )
